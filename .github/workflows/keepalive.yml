@@ -2,7 +2,8 @@ name: LGL keep-alive
 
 # Keeps the Live Global Lens backend (livegloballens.com) awake 24/7 so live news
 # collection, Global Pulse 100 rebuilds, place seeding and other scheduled jobs never stop.
-# Each run pings every 2 minutes for about 30 minutes; a new run starts every 30 minutes.
+# Each run pings every 2 minutes for about 30 minutes, then starts the next run itself,
+# so pings continue even when GitHub delays scheduled runs. The schedule is a backup.
 
 on:
   schedule:
@@ -15,6 +16,7 @@ concurrency:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   keepalive:
@@ -44,3 +46,9 @@ jobs:
             git commit -m "Heartbeat $(date -u +%F)" || exit 0
             git push
           fi
+
+      - name: Start the next run (self-chaining, so pings never stop)
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run keepalive.yml --ref main --repo "${{ github.repository }}" || echo "next run could not be queued; the schedule will start one"
