@@ -1,0 +1,114 @@
+name: LGL health monitor
+
+# Checks every 15 minutes that Live Global Lens is up and its live jobs are running:
+# website, backend code version, core feed collection, the six global feed shards and
+# automatic Story Hubs. On a failure it opens (or updates) a GitHub issue, which GitHub
+# emails to the repository owner; when everything recovers it closes the issue.
+# A rolling status file (status/latest.json) keeps the latest result in the repo.
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: lgl-health
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Run health checks
+        id: checks
+        run: |
+          python3 - <<'PY'
+          import json, os, time, urllib.request, datetime
+          API = "https://vc844429812320.coderick.net"
+          def get(url, as_json=True):
+              req = urllib.request.Request(url, headers={"User-Agent": "LiveGlobalLens-health"})
+              for attempt in range(3):
+                  try:
+                      with urllib.request.urlopen(req, timeout=40) as r:
+                          body = r.read().decode("utf-8", "ignore")
+                          return r.status, (json.loads(body) if as_json else body)
+                  except Exception as e:
+                      err = str(e)
+                      time.sleep(10)
+              return 0, err
+          now = datetime.datetime.now(datetime.timezone.utc)
+          def age_min(iso):
+              try:
+                  t = datetime.datetime.fromisoformat(str(iso).replace("Z", "+00:00"))
+                  return round((now - t).total_seconds() / 60, 1)
+              except Exception:
+                  return 9999
+          results = []
+          def check(name, ok, detail):
+              results.append({"check": name, "ok": bool(ok), "detail": detail})
+          code, body = get("https://livegloballens.com/", as_json=False)
+          check("Website loads", code == 200 and "Live Global Lens" in str(body), "HTTP %s" % code)
+          code, b = get(API + "/api/lgl/health/boot")
+          check("Backend running current code", code == 200 and isinstance(b, dict) and b.get("up_to_date") is True, b if isinstance(b, dict) else str(b)[:200])
+          code, b = get(API + "/api/lgl/live/ingest-status")
+          last = b.get("latest_check_at") if isinstance(b, dict) else None
+          check("Core feeds collected in the last 30 min", code == 200 and age_min(last) <= 30, {"latest_check_at": last, "healthy": b.get("healthy") if isinstance(b, dict) else None, "feeds": b.get("feeds") if isinstance(b, dict) else None})
+          code, b = get(API + "/api/lgl/health/global-ingest")
+          shards = (b or {}).get("shards", []) if isinstance(b, dict) else []
+          fresh = [s for s in shards if s and age_min(s.get("at")) <= 20]
+          check("Global feed shards ran in the last 20 min", code == 200 and len(fresh) >= 5, {"fresh_shards": len(fresh), "of": len(shards), "feeds": (b or {}).get("feeds") if isinstance(b, dict) else None})
+          code, b = get(API + "/api/lgl/health/auto-hubs")
+          ran = b.get("ran") if isinstance(b, dict) else None
+          check("Story Hubs built in the last 45 min", code == 200 and age_min(ran) <= 45, {"ran": ran, "created": (b or {}).get("created") if isinstance(b, dict) else None})
+          code, b = get(API + "/api/lgl/live/news?archive=1&span=1d&lang=all")
+          n = len(b.get("items", [])) if isinstance(b, dict) else 0
+          check("Live wire has at least 100 stories", code == 200 and n >= 100, {"items": n})
+          ok = all(r["ok"] for r in results)
+          report = {"checked_at": now.isoformat(), "ok": ok, "results": results}
+          os.makedirs("status", exist_ok=True)
+          json.dump(report, open("status/latest.json", "w"), indent=2)
+          lines = ["| Check | Result | Detail |", "|---|---|---|"] + ["| %s | %s | `%s` |" % (r["check"], "✅" if r["ok"] else "❌", json.dumps(r["detail"])[:180]) for r in results]
+          open("status/summary.md", "w").write("Checked %s UTC\n\n" % now.strftime("%Y-%m-%d %H:%M") + "\n".join(lines) + "\n")
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write("ok=%s\n" % ("true" if ok else "false"))
+          print(open("status/summary.md").read())
+          PY
+
+      - name: Save status
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add status/latest.json status/summary.md
+          git commit -m "Health: ${{ steps.checks.outputs.ok == 'true' && 'all good' || 'problem found' }} $(date -u +%FT%TZ)" || exit 0
+          git pull --rebase --autostash || true
+          git push || true
+
+      - name: Open or update an alert issue
+        if: steps.checks.outputs.ok != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create lgl-health --repo "${{ github.repository }}" --color d73a4a --description "Automatic LGL health alert" 2>/dev/null || true
+          num=$(gh issue list --repo "${{ github.repository }}" --label lgl-health --state open --json number --jq '.[0].number' || true)
+          if [ -z "$num" ]; then
+            gh issue create --repo "${{ github.repository }}" --title "LGL health alert: a live check is failing" --label lgl-health --body-file status/summary.md
+          else
+            gh issue comment "$num" --repo "${{ github.repository }}" --body-file status/summary.md
+          fi
+
+      - name: Close the alert when healthy
+        if: steps.checks.outputs.ok == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for num in $(gh issue list --repo "${{ github.repository }}" --label lgl-health --state open --json number --jq '.[].number' 2>/dev/null || true); do
+            gh issue close "$num" --repo "${{ github.repository }}" --comment "All checks are passing again. $(date -u +%FT%TZ)"
+          done
