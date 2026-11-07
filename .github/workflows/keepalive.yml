@@ -1,0 +1,46 @@
+name: LGL keep-alive
+
+# Keeps the Live Global Lens backend (livegloballens.com) awake 24/7 so live news
+# collection, Global Pulse 100 rebuilds, place seeding and other scheduled jobs never stop.
+# Each run pings every 2 minutes for about 30 minutes; a new run starts every 30 minutes.
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: lgl-keepalive
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Ping Live Global Lens every 2 minutes for ~30 minutes
+        run: |
+          for i in $(seq 1 15); do
+            for url in "https://vc844429812320.coderick.net/api/lgl/health/cron" "https://livegloballens.com/"; do
+              code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 30 -A "LiveGlobalLens-keepalive" "$url" || echo 000)
+              echo "$(date -u +%FT%TZ) $url -> $code"
+            done
+            if [ "$i" -lt 15 ]; then sleep 120; fi
+          done
+
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Daily heartbeat commit (keeps the scheduled workflow enabled)
+        run: |
+          if [ "$(date -u +%H)" = "00" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            date -u +%FT%TZ > heartbeat.txt
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add heartbeat.txt
+            git commit -m "Heartbeat $(date -u +%F)" || exit 0
+            git push
+          fi
