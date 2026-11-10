@@ -4,6 +4,8 @@ name: LGL keep-alive
 # collection, Global Pulse 100 rebuilds, place seeding and other scheduled jobs never stop.
 # Each run pings every 2 minutes for about 30 minutes, then starts the next run itself,
 # so pings continue even when GitHub delays scheduled runs. The schedule is a backup.
+# It also starts the health monitor (health.yml) twice per run, about every 15 minutes,
+# because GitHub's own schedule for that workflow often skips hours.
 
 on:
   schedule:
@@ -24,8 +26,13 @@ jobs:
     timeout-minutes: 40
     steps:
       - name: Ping Live Global Lens every 2 minutes for ~30 minutes
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           for i in $(seq 1 15); do
+            if [ "$i" = "1" ] || [ "$i" = "8" ]; then
+              gh workflow run health.yml --ref main --repo "${{ github.repository }}" || echo "health check could not be started"
+            fi
             for url in "https://vc844429812320.coderick.net/api/lgl/health/cron" "https://livegloballens.com/"; do
               code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 30 -A "LiveGlobalLens-keepalive" "$url" || echo 000)
               echo "$(date -u +%FT%TZ) $url -> $code"
