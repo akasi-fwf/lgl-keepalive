@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-10T09:25:38.996872+00:00",
+  "checked_at": "2026-11-10T09:39:58.354442+00:00",
   "ok": true,
   "results": [
     {
@@ -22,8 +22,8 @@
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-10T09:21:28.832Z",
-        "healthy": 152,
+        "latest_check_at": "2026-11-10T09:36:36.516Z",
+        "healthy": 149,
         "feeds": 179
       }
     },
@@ -41,9 +41,9 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 8512,
-        "headlines_24h": 151215,
-        "outlets_24h": 9944
+        "headlines_1h": 8871,
+        "headlines_24h": 154403,
+        "outlets_24h": 9958
       }
     },
     {
@@ -67,24 +67,24 @@
       "check": "Feed discovery ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-10T09:24:46.483Z",
-        "found": 646
+        "at": "2026-11-10T09:40:00.071Z",
+        "found": 660
       }
     },
     {
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-10T09:21:08.078Z",
-        "filled_total": 2312
+        "at": "2026-11-10T09:36:08.769Z",
+        "filled_total": 2397
       }
     },
     {
       "check": "Outlet names job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-10T09:16:02.661Z",
-        "sites_with_name": 8846
+        "at": "2026-11-10T09:36:02.905Z",
+        "sites_with_name": 8881
       }
     },
     {
@@ -100,8 +100,8 @@
       "check": "Story Hubs built in the last 45 min",
       "ok": true,
       "detail": {
-        "ran": "2026-11-10T09:15:00.001Z",
-        "created": 96
+        "ran": "2026-11-10T09:30:00.002Z",
+        "created": 97
       }
     },
     {
