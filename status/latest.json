@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-10T14:09:22.812934+00:00",
+  "checked_at": "2026-11-10T14:23:36.902792+00:00",
   "ok": false,
   "results": [
     {
@@ -11,19 +11,19 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-10T14:09:15.784Z",
+        "booted": "2026-11-10T14:23:19.633Z",
         "changed_since_boot": [],
-        "checked": "2026-11-10T14:09:15.784Z",
+        "checked": "2026-11-10T14:23:19.633Z",
         "last_restart": null,
         "up_to_date": true
       }
     },
     {
       "check": "Core feeds collected in the last 30 min",
-      "ok": true,
+      "ok": false,
       "detail": {
         "latest_check_at": "2026-11-10T13:41:39.238Z",
-        "healthy": 151,
+        "healthy": 0,
         "feeds": 179
       }
     },
@@ -41,9 +41,9 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 3488,
-        "headlines_24h": 201396,
-        "outlets_24h": 10057
+        "headlines_1h": 1481,
+        "headlines_24h": 200307,
+        "outlets_24h": 10032
       }
     },
     {
@@ -65,7 +65,7 @@
     },
     {
       "check": "Feed discovery ran in the last 30 min",
-      "ok": true,
+      "ok": false,
       "detail": {
         "at": "2026-11-10T13:49:54.543Z",
         "found": 1008
@@ -81,10 +81,10 @@
     },
     {
       "check": "Outlet names job ran in the last 30 min",
-      "ok": false,
+      "ok": true,
       "detail": {
-        "at": "2026-11-10T13:36:02.298Z",
-        "sites_with_name": 8998
+        "at": "2026-11-10T14:16:00.013Z",
+        "sites_with_name": 0
       }
     },
     {
