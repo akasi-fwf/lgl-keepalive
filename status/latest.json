@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-10T07:03:35.186465+00:00",
+  "checked_at": "2026-11-10T07:18:07.416416+00:00",
   "ok": true,
   "results": [
     {
@@ -11,9 +11,9 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-10T06:10:12.248Z",
+        "booted": "2026-11-10T07:16:36.609Z",
         "changed_since_boot": [],
-        "checked": "2026-11-10T06:10:12.248Z",
+        "checked": "2026-11-10T07:16:36.609Z",
         "last_restart": null,
         "up_to_date": true
       }
@@ -22,8 +22,8 @@
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-10T07:01:28.236Z",
-        "healthy": 152,
+        "latest_check_at": "2026-11-10T07:11:32.064Z",
+        "healthy": 151,
         "feeds": 179
       }
     },
@@ -41,9 +41,9 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 6727,
-        "headlines_24h": 126419,
-        "outlets_24h": 9728
+        "headlines_1h": 6572,
+        "headlines_24h": 127981,
+        "outlets_24h": 9732
       }
     },
     {
@@ -60,31 +60,31 @@
       "ok": true,
       "detail": {
         "last_restart": null,
-        "state": "ok"
+        "state": "young"
       }
     },
     {
       "check": "Feed discovery ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-10T07:00:02.980Z",
-        "found": 457
+        "at": "2026-11-10T07:15:00.915Z",
+        "found": 470
       }
     },
     {
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-10T07:01:47.018Z",
-        "filled_total": 1605
+        "at": "2026-11-10T07:11:00.566Z",
+        "filled_total": 1619
       }
     },
     {
       "check": "Outlet names job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-10T06:56:03.476Z",
-        "sites_with_name": 8741
+        "at": "2026-11-10T07:16:04.700Z",
+        "sites_with_name": 8747
       }
     },
     {
