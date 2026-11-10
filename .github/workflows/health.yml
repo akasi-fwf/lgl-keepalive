@@ -1,8 +1,10 @@
 name: LGL health monitor
 
-# Checks every 15 minutes that Live Global Lens is up and its live jobs are running:
-# website, backend code version, core feed collection, the six global feed shards and
-# automatic Story Hubs. On a failure it opens (or updates) a GitHub issue, which GitHub
+# Checks that Live Global Lens is up and its live jobs are running: website, backend code
+# version, core feed collection, all eight global feed shards, headline volume, Global Pulse
+# 100, automatic Story Hubs, the ingest watchdog, feed discovery, hub pictures, outlet names
+# and the sitemaps. GitHub's schedule is unreliable, so the keep-alive workflow also starts
+# this check about every 15 minutes. On a failure it opens (or updates) a GitHub issue, which GitHub
 # emails to the repository owner; when everything recovers it closes the issue.
 # A rolling status file (status/latest.json) keeps the latest result in the repo.
 
@@ -64,7 +66,27 @@ jobs:
           code, b = get(API + "/api/lgl/health/global-ingest")
           shards = (b or {}).get("shards", []) if isinstance(b, dict) else []
           fresh = [s for s in shards if s and age_min(s.get("at")) <= 20]
-          check("Global feed shards ran in the last 20 min", code == 200 and len(fresh) >= 5, {"fresh_shards": len(fresh), "of": len(shards), "feeds": (b or {}).get("feeds") if isinstance(b, dict) else None})
+          check("All 8 global feed shards ran in the last 20 min", code == 200 and len(shards) == 8 and len(fresh) >= 7, {"fresh_shards": len(fresh), "of": len(shards), "expected": 8, "feeds": (b or {}).get("feeds") if isinstance(b, dict) else None})
+          code, b = get(API + "/api/lgl/live/stats")
+          h1 = b.get("headlines_1h", 0) if isinstance(b, dict) else 0
+          check("At least 200 headlines collected in the last hour", code == 200 and h1 >= 200, {"headlines_1h": h1, "headlines_24h": (b or {}).get("headlines_24h") if isinstance(b, dict) else None, "outlets_24h": (b or {}).get("outlets_24h") if isinstance(b, dict) else None})
+          code, b = get(API + "/api/collections/editions/records?sort=-updated&perPage=1&fields=updated,stats")
+          ed = (b.get("items") or [{}])[0] if isinstance(b, dict) else {}
+          check("Global Pulse 100 rebuilt in the last 60 min", code == 200 and age_min(str(ed.get("updated", "")).replace(" ", "T")) <= 60, {"updated": ed.get("updated"), "events": (ed.get("stats") or {}).get("events"), "reports": (ed.get("stats") or {}).get("reports")})
+          code, b = get(API + "/api/lgl/health/watchdog")
+          check("Ingest watchdog reports healthy", code == 200 and isinstance(b, dict) and b.get("state") in ("ok", "young", "cooldown"), b if isinstance(b, dict) else str(b)[:200])
+          code, b = get(API + "/api/lgl/health/feed-discovery")
+          cur = (b or {}).get("cursor", {}) if isinstance(b, dict) else {}
+          check("Feed discovery ran in the last 30 min", code == 200 and age_min(cur.get("at")) <= 30, {"at": cur.get("at"), "found": cur.get("found")})
+          code, b = get(API + "/api/lgl/health/hub-images")
+          last = (b or {}).get("last") or {} if isinstance(b, dict) else {}
+          check("Story Hub pictures job ran in the last 30 min", code == 200 and age_min(last.get("at")) <= 30, {"at": last.get("at"), "filled_total": (b or {}).get("filled") if isinstance(b, dict) else None})
+          code, b = get(API + "/api/lgl/health/outlet-names")
+          last = (b or {}).get("last") or {} if isinstance(b, dict) else {}
+          check("Outlet names job ran in the last 30 min", code == 200 and age_min(last.get("at")) <= 30, {"at": last.get("at"), "sites_with_name": last.get("sites_with_name")})
+          code, body = get("https://livegloballens.com/sitemap.xml", as_json=False)
+          code2, body2 = get(API + "/api/lgl/sitemap.xml", as_json=False)
+          check("Sitemaps are served", code == 200 and "<urlset" in str(body) and code2 == 200 and "<urlset" in str(body2), {"site": code, "places_and_stories": code2, "urls": str(body2).count("<url>")})
           code, b = get(API + "/api/lgl/health/auto-hubs")
           ran = b.get("ran") if isinstance(b, dict) else None
           check("Story Hubs built in the last 45 min", code == 200 and age_min(ran) <= 45, {"ran": ran, "created": (b or {}).get("created") if isinstance(b, dict) else None})
