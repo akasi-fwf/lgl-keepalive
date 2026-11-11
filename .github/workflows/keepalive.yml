@@ -1,15 +1,14 @@
 name: LGL keep-alive
 
-# Keeps the Live Global Lens backend (livegloballens.com) awake 24/7 so live news
-# collection, Global Pulse 100 rebuilds, place seeding and other scheduled jobs never stop.
-# Each run pings every 2 minutes for about 30 minutes, then starts the next run itself,
-# so pings continue even when GitHub delays scheduled runs. The schedule is a backup.
-# It also starts the health monitor (health.yml) twice per run, about every 15 minutes,
-# because GitHub's own schedule for that workflow often skips hours.
+# Keeps the Live Global Lens backend (livegloballens.com) awake 24/7 so live news,
+# opportunities, alerts and other scheduled jobs never stop.
+# Each run pings every 2 minutes for about 28 minutes (time-boxed, so a slow server can
+# never make the job overrun), then queues the next run itself. The schedule is a backup.
+# It also starts the health monitor (health.yml) twice per run, about every 15 minutes.
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "*/20 * * * *"
   workflow_dispatch:
 
 concurrency:
@@ -23,35 +22,42 @@ permissions:
 jobs:
   keepalive:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 55
     steps:
-      - name: Ping Live Global Lens every 2 minutes for ~30 minutes
+      - name: Ping Live Global Lens every 2 minutes for ~28 minutes
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          for i in $(seq 1 15); do
+          start=$(date +%s); i=0
+          while [ $(( $(date +%s) - start )) -lt 1680 ]; do
+            i=$((i+1))
             if [ "$i" = "1" ] || [ "$i" = "8" ]; then
               gh workflow run health.yml --ref main --repo "${{ github.repository }}" || echo "health check could not be started"
             fi
             for url in "https://vc844429812320.coderick.net/api/lgl/health/cron" "https://livegloballens.com/"; do
-              code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 30 -A "LiveGlobalLens-keepalive" "$url" || echo 000)
+              code=$(curl -s -o /dev/null -w "%{http_code}" --connect-timeout 10 --max-time 20 -A "LiveGlobalLens-keepalive" "$url" || echo 000)
               echo "$(date -u +%FT%TZ) $url -> $code"
             done
-            if [ "$i" -lt 15 ]; then sleep 120; fi
+            sleep 120
           done
 
       - name: Check out repository
+        if: always()
+        continue-on-error: true
         uses: actions/checkout@v4
 
       - name: Daily heartbeat commit (keeps the scheduled workflow enabled)
+        if: always()
+        continue-on-error: true
         run: |
-          if [ "$(date -u +%H)" = "00" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          if [ "$(date -u +%H)" = "00" ]; then
             date -u +%FT%TZ > heartbeat.txt
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add heartbeat.txt
             git commit -m "Heartbeat $(date -u +%F)" || exit 0
-            git push
+            for n in 1 2 3; do git pull --rebase --autostash origin main && git push && break; sleep 5; done || true
           fi
 
       - name: Start the next run (self-chaining, so pings never stop)
