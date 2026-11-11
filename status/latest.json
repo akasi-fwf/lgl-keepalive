@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-11T21:44:31.399073+00:00",
-  "ok": true,
+  "checked_at": "2026-11-11T21:58:34.346808+00:00",
+  "ok": false,
   "results": [
     {
       "check": "Website loads",
@@ -9,21 +9,15 @@
     },
     {
       "check": "Backend running current code",
-      "ok": true,
-      "detail": {
-        "booted": "2026-11-11T21:26:29.938Z",
-        "changed_since_boot": [],
-        "checked": "2026-11-11T21:26:29.938Z",
-        "last_restart": null,
-        "up_to_date": true
-      }
+      "ok": false,
+      "detail": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-11T21:41:31.778Z",
-        "healthy": 149,
+        "latest_check_at": "2026-11-11T21:46:38.481Z",
+        "healthy": 148,
         "feeds": 179
       }
     },
@@ -41,9 +35,9 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 3183,
-        "headlines_24h": 154401,
-        "outlets_24h": 10322
+        "headlines_1h": 3209,
+        "headlines_24h": 155288,
+        "outlets_24h": 10350
       }
     },
     {
@@ -57,50 +51,47 @@
     },
     {
       "check": "Ingest watchdog reports healthy",
-      "ok": true,
-      "detail": {
-        "last_restart": null,
-        "state": "young"
-      }
+      "ok": false,
+      "detail": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "check": "Feed discovery ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-11T21:40:02.676Z",
-        "found": 2202
+        "at": "2026-11-11T21:45:00.186Z",
+        "found": 2219
       }
     },
     {
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-11T21:41:00.656Z",
-        "filled_total": 8907
+        "at": "2026-11-11T21:56:01.030Z",
+        "filled_total": 8976
       }
     },
     {
       "check": "Outlet names job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-11T21:36:03.567Z",
-        "sites_with_name": 9452
+        "at": "2026-11-11T21:56:03.243Z",
+        "sites_with_name": 9462
       }
     },
     {
       "check": "Sitemaps are served",
-      "ok": true,
+      "ok": false,
       "detail": {
         "site": 200,
         "places_and_stories": 200,
-        "urls": 6500
+        "urls": 0
       }
     },
     {
       "check": "Story Hubs built in the last 45 min",
       "ok": true,
       "detail": {
-        "ran": "2026-11-11T21:30:00.001Z",
+        "ran": "2026-11-11T21:45:00.002Z",
         "created": 80
       }
     },
