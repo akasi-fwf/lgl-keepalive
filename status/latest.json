@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-11T03:50:59.908438+00:00",
+  "checked_at": "2026-11-11T04:05:10.278795+00:00",
   "ok": false,
   "results": [
     {
@@ -11,9 +11,9 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-11T03:50:55.026Z",
+        "booted": "2026-11-11T04:04:57.055Z",
         "changed_since_boot": [],
-        "checked": "2026-11-11T03:50:55.026Z",
+        "checked": "2026-11-11T04:04:57.055Z",
         "last_restart": null,
         "up_to_date": true
       }
@@ -22,16 +22,16 @@
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-11T03:36:42.486Z",
+        "latest_check_at": "2026-11-11T04:01:39.103Z",
         "healthy": 150,
         "feeds": 179
       }
     },
     {
       "check": "All 8 global feed shards ran in the last 20 min",
-      "ok": true,
+      "ok": false,
       "detail": {
-        "fresh_shards": 8,
+        "fresh_shards": 0,
         "of": 8,
         "expected": 8,
         "feeds": 15933
@@ -41,18 +41,18 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 1028,
-        "headlines_24h": 263843,
-        "outlets_24h": 10431
+        "headlines_1h": 806,
+        "headlines_24h": 261993,
+        "outlets_24h": 10411
       }
     },
     {
       "check": "Global Pulse 100 rebuilt in the last 60 min",
       "ok": true,
       "detail": {
-        "updated": "2026-11-11 03:25:43.183Z",
-        "events": 325,
-        "reports": 6405
+        "updated": "2026-11-11 03:55:31.291Z",
+        "events": 306,
+        "reports": 6128
       }
     },
     {
@@ -67,16 +67,16 @@
       "check": "Feed discovery ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-11T03:45:00.821Z",
-        "found": 1897
+        "at": "2026-11-11T04:00:04.307Z",
+        "found": 1907
       }
     },
     {
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-11T03:41:00.503Z",
-        "filled_total": 6796
+        "at": "2026-11-11T04:01:33.093Z",
+        "filled_total": 6912
       }
     },
     {
