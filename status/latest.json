@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-11T13:03:53.146989+00:00",
+  "checked_at": "2026-11-11T13:17:59.983713+00:00",
   "ok": false,
   "results": [
     {
@@ -11,19 +11,19 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-11T13:03:36.858Z",
+        "booted": "2026-11-11T13:17:00.215Z",
         "changed_since_boot": [],
-        "checked": "2026-11-11T13:03:36.858Z",
+        "checked": "2026-11-11T13:17:00.215Z",
         "last_restart": null,
         "up_to_date": true
       }
     },
     {
       "check": "Core feeds collected in the last 30 min",
-      "ok": false,
+      "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-11T10:41:44.787Z",
-        "healthy": 0,
+        "latest_check_at": "2026-11-11T13:11:32.896Z",
+        "healthy": 150,
         "feeds": 179
       }
     },
@@ -41,18 +41,18 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 871,
-        "headlines_24h": 153835,
-        "outlets_24h": 9114
+        "headlines_1h": 1718,
+        "headlines_24h": 152955,
+        "outlets_24h": 9089
       }
     },
     {
       "check": "Global Pulse 100 rebuilt in the last 60 min",
       "ok": true,
       "detail": {
-        "updated": "2026-11-11 12:50:36.758Z",
-        "events": 320,
-        "reports": 6124
+        "updated": "2026-11-11 13:10:31.860Z",
+        "events": 321,
+        "reports": 6132
       }
     },
     {
@@ -75,16 +75,16 @@
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-11T12:56:00.758Z",
-        "filled_total": 7468
+        "at": "2026-11-11T13:16:00.818Z",
+        "filled_total": 7543
       }
     },
     {
       "check": "Outlet names job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-11T12:56:02.604Z",
-        "sites_with_name": 9350
+        "at": "2026-11-11T13:16:02.750Z",
+        "sites_with_name": 9358
       }
     },
     {
