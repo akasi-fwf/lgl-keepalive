@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-11T04:19:16.774652+00:00",
+  "checked_at": "2026-11-11T04:33:32.298698+00:00",
   "ok": false,
   "results": [
     {
@@ -11,9 +11,9 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-11T04:19:11.385Z",
+        "booted": "2026-11-11T04:33:15.133Z",
         "changed_since_boot": [],
-        "checked": "2026-11-11T04:19:11.385Z",
+        "checked": "2026-11-11T04:33:15.133Z",
         "last_restart": null,
         "up_to_date": true
       }
@@ -41,9 +41,9 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 654,
-        "headlines_24h": 260823,
-        "outlets_24h": 10401
+        "headlines_1h": 359,
+        "headlines_24h": 259023,
+        "outlets_24h": 10394
       }
     },
     {
@@ -65,7 +65,7 @@
     },
     {
       "check": "Feed discovery ran in the last 30 min",
-      "ok": true,
+      "ok": false,
       "detail": {
         "at": "2026-11-11T04:00:04.307Z",
         "found": 1907
