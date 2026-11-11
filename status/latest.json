@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-11T02:40:22.598215+00:00",
+  "checked_at": "2026-11-11T02:54:25.086817+00:00",
   "ok": false,
   "results": [
     {
@@ -11,19 +11,19 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-11T02:40:07.820Z",
+        "booted": "2026-11-11T02:54:20.736Z",
         "changed_since_boot": [],
-        "checked": "2026-11-11T02:40:07.820Z",
+        "checked": "2026-11-11T02:54:20.736Z",
         "last_restart": null,
         "up_to_date": true
       }
     },
     {
       "check": "Core feeds collected in the last 30 min",
-      "ok": true,
+      "ok": false,
       "detail": {
         "latest_check_at": "2026-11-11T02:11:32.923Z",
-        "healthy": 67,
+        "healthy": 0,
         "feeds": 179
       }
     },
@@ -41,9 +41,9 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 785,
-        "headlines_24h": 268468,
-        "outlets_24h": 10482
+        "headlines_1h": 312,
+        "headlines_24h": 267518,
+        "outlets_24h": 10477
       }
     },
     {
@@ -98,7 +98,7 @@
     },
     {
       "check": "Story Hubs built in the last 45 min",
-      "ok": true,
+      "ok": false,
       "detail": {
         "ran": "2026-11-11T02:00:00.002Z",
         "created": 80
