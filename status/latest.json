@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-12T08:51:48.921438+00:00",
+  "checked_at": "2026-11-12T09:04:15.937405+00:00",
   "ok": false,
   "results": [
     {
@@ -11,9 +11,9 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-12T08:51:49.249Z",
+        "booted": "2026-11-12T09:04:12.025Z",
         "changed_since_boot": [],
-        "checked": "2026-11-12T08:51:49.249Z",
+        "checked": "2026-11-12T09:04:12.025Z",
         "last_restart": null,
         "up_to_date": true
       }
@@ -22,8 +22,8 @@
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-12T08:46:36.570Z",
-        "healthy": 150,
+        "latest_check_at": "2026-11-12T09:01:35.255Z",
+        "healthy": 152,
         "feeds": 179
       }
     },
@@ -41,9 +41,9 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 1769,
-        "headlines_24h": 150879,
-        "outlets_24h": 9989
+        "headlines_1h": 1790,
+        "headlines_24h": 150120,
+        "outlets_24h": 9959
       }
     },
     {
@@ -75,16 +75,16 @@
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-12T08:46:34.889Z",
-        "filled_total": 10509
+        "at": "2026-11-12T09:01:42.431Z",
+        "filled_total": 10594
       }
     },
     {
       "check": "Outlet names job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-12T08:46:04.596Z",
-        "sites_with_name": 9585
+        "at": "2026-11-12T08:56:03.346Z",
+        "sites_with_name": 9579
       }
     },
     {
@@ -98,9 +98,9 @@
     },
     {
       "check": "Story Hubs built in the last 45 min",
-      "ok": false,
+      "ok": true,
       "detail": {
-        "ran": "2026-11-12T01:45:00.001Z",
+        "ran": "2026-11-12T09:00:00.000Z",
         "created": 80
       }
     },
