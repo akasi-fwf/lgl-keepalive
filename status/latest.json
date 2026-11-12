@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-12T18:59:58.851824+00:00",
+  "checked_at": "2026-11-12T19:14:05.634788+00:00",
   "ok": false,
   "results": [
     {
@@ -11,19 +11,19 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-12T18:59:54.727Z",
+        "booted": "2026-11-12T19:14:00.751Z",
         "changed_since_boot": [],
-        "checked": "2026-11-12T18:59:54.727Z",
+        "checked": "2026-11-12T19:14:00.751Z",
         "last_restart": null,
         "up_to_date": true
       }
     },
     {
       "check": "Core feeds collected in the last 30 min",
-      "ok": false,
+      "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-12T15:02:03.985Z",
-        "healthy": 0,
+        "latest_check_at": "2026-11-12T19:11:37.517Z",
+        "healthy": 151,
         "feeds": 179
       }
     },
@@ -41,18 +41,18 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 680,
-        "headlines_24h": 89752,
-        "outlets_24h": 7643
+        "headlines_1h": 1560,
+        "headlines_24h": 93096,
+        "outlets_24h": 7834
       }
     },
     {
       "check": "Global Pulse 100 rebuilt in the last 60 min",
       "ok": true,
       "detail": {
-        "updated": "2026-11-12 18:40:33.210Z",
-        "events": 332,
-        "reports": 6196
+        "updated": "2026-11-12 19:00:33.534Z",
+        "events": 293,
+        "reports": 6183
       }
     },
     {
@@ -75,15 +75,15 @@
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-12T18:56:01.109Z",
-        "filled_total": 11453
+        "at": "2026-11-12T19:11:00.723Z",
+        "filled_total": 11504
       }
     },
     {
       "check": "Outlet names job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-12T18:56:03.488Z",
+        "at": "2026-11-12T19:06:03.718Z",
         "sites_with_name": 9578
       }
     },
