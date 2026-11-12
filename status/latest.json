@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-12T03:38:15.104950+00:00",
+  "checked_at": "2026-11-12T03:52:28.913949+00:00",
   "ok": false,
   "results": [
     {
@@ -11,9 +11,9 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-12T03:38:11.199Z",
+        "booted": "2026-11-12T03:51:41.581Z",
         "changed_since_boot": [],
-        "checked": "2026-11-12T03:38:11.199Z",
+        "checked": "2026-11-12T03:51:41.581Z",
         "last_restart": null,
         "up_to_date": true
       }
@@ -39,11 +39,11 @@
     },
     {
       "check": "At least 200 headlines collected in the last hour",
-      "ok": true,
+      "ok": false,
       "detail": {
-        "headlines_1h": 258,
-        "headlines_24h": 158566,
-        "outlets_24h": 10482
+        "headlines_1h": 186,
+        "headlines_24h": 158211,
+        "outlets_24h": 10471
       }
     },
     {
@@ -73,7 +73,7 @@
     },
     {
       "check": "Story Hub pictures job ran in the last 30 min",
-      "ok": true,
+      "ok": false,
       "detail": {
         "at": "2026-11-12T03:21:00.023Z",
         "filled_total": 10071
@@ -81,7 +81,7 @@
     },
     {
       "check": "Outlet names job ran in the last 30 min",
-      "ok": true,
+      "ok": false,
       "detail": {
         "at": "2026-11-12T03:16:03.571Z",
         "sites_with_name": 9564
