@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-12T10:01:12.073176+00:00",
+  "checked_at": "2026-11-12T10:15:15.229166+00:00",
   "ok": false,
   "results": [
     {
@@ -11,9 +11,9 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-12T10:00:44.277Z",
+        "booted": "2026-11-12T10:15:09.487Z",
         "changed_since_boot": [],
-        "checked": "2026-11-12T10:00:44.277Z",
+        "checked": "2026-11-12T10:15:09.487Z",
         "last_restart": null,
         "up_to_date": true
       }
@@ -41,18 +41,18 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 661,
-        "headlines_24h": 146189,
-        "outlets_24h": 9805
+        "headlines_1h": 628,
+        "headlines_24h": 145085,
+        "outlets_24h": 9752
       }
     },
     {
       "check": "Global Pulse 100 rebuilt in the last 60 min",
       "ok": true,
       "detail": {
-        "updated": "2026-11-12 09:35:30.912Z",
-        "events": 323,
-        "reports": 6092
+        "updated": "2026-11-12 10:05:30.578Z",
+        "events": 319,
+        "reports": 6113
       }
     },
     {
