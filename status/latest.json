@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-13T21:16:41.383900+00:00",
+  "checked_at": "2026-11-13T21:30:44.410996+00:00",
   "ok": false,
   "results": [
     {
@@ -11,19 +11,19 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-13T21:15:54.542Z",
+        "booted": "2026-11-13T21:30:39.697Z",
         "changed_since_boot": [],
-        "checked": "2026-11-13T21:15:54.542Z",
+        "checked": "2026-11-13T21:30:39.697Z",
         "last_restart": null,
         "up_to_date": true
       }
     },
     {
       "check": "Core feeds collected in the last 30 min",
-      "ok": false,
+      "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-13T18:56:34.008Z",
-        "healthy": 0,
+        "latest_check_at": "2026-11-13T21:21:33.848Z",
+        "healthy": 150,
         "feeds": 179
       }
     },
@@ -41,18 +41,18 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 321,
-        "headlines_24h": 49923,
-        "outlets_24h": 4460
+        "headlines_1h": 718,
+        "headlines_24h": 50706,
+        "outlets_24h": 4483
       }
     },
     {
       "check": "Global Pulse 100 rebuilt in the last 60 min",
       "ok": true,
       "detail": {
-        "updated": "2026-11-13 20:40:31.525Z",
-        "events": 285,
-        "reports": 6150
+        "updated": "2026-11-13 21:20:33.010Z",
+        "events": 306,
+        "reports": 6144
       }
     },
     {
@@ -65,18 +65,18 @@
     },
     {
       "check": "Feed discovery ran in the last 30 min",
-      "ok": false,
+      "ok": true,
       "detail": {
-        "at": "2026-11-13T20:20:01.054Z",
-        "found": 2817
+        "at": "2026-11-13T21:25:01.146Z",
+        "found": 2846
       }
     },
     {
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-13T21:01:00.026Z",
-        "filled_total": 13101
+        "at": "2026-11-13T21:26:00.024Z",
+        "filled_total": 13162
       }
     },
     {
