@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-14T12:37:15.391808+00:00",
+  "checked_at": "2026-11-14T12:51:27.954210+00:00",
   "ok": false,
   "results": [
     {
@@ -11,9 +11,9 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-14T12:37:16.177Z",
+        "booted": "2026-11-14T12:51:24.246Z",
         "changed_since_boot": [],
-        "checked": "2026-11-14T12:37:16.177Z",
+        "checked": "2026-11-14T12:51:24.246Z",
         "last_restart": null,
         "up_to_date": true
       }
@@ -41,9 +41,9 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 750,
-        "headlines_24h": 47968,
-        "outlets_24h": 4962
+        "headlines_1h": 510,
+        "headlines_24h": 47211,
+        "outlets_24h": 4920
       }
     },
     {
