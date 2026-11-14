@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-14T10:15:34.211799+00:00",
+  "checked_at": "2026-11-14T10:25:59.135474+00:00",
   "ok": false,
   "results": [
     {
@@ -11,19 +11,19 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-14T10:14:44.178Z",
+        "booted": "2026-11-14T10:25:32.050Z",
         "changed_since_boot": [],
-        "checked": "2026-11-14T10:14:44.178Z",
+        "checked": "2026-11-14T10:25:32.050Z",
         "last_restart": null,
         "up_to_date": true
       }
     },
     {
       "check": "Core feeds collected in the last 30 min",
-      "ok": false,
+      "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-14T08:11:34.719Z",
-        "healthy": 0,
+        "latest_check_at": "2026-11-14T10:16:43.171Z",
+        "healthy": 152,
         "feeds": 179
       }
     },
@@ -41,9 +41,9 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 438,
-        "headlines_24h": 51962,
-        "outlets_24h": 5326
+        "headlines_1h": 737,
+        "headlines_24h": 52322,
+        "outlets_24h": 5309
       }
     },
     {
@@ -65,26 +65,26 @@
     },
     {
       "check": "Feed discovery ran in the last 30 min",
-      "ok": false,
+      "ok": true,
       "detail": {
-        "at": "2026-11-14T08:00:02.181Z",
-        "found": 2984
+        "at": "2026-11-14T10:20:00.252Z",
+        "found": 3001
       }
     },
     {
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-14T10:11:00.651Z",
-        "filled_total": 13848
+        "at": "2026-11-14T10:21:00.042Z",
+        "filled_total": 13894
       }
     },
     {
       "check": "Outlet names job ran in the last 30 min",
-      "ok": false,
+      "ok": true,
       "detail": {
-        "at": "2026-11-14T08:06:03.550Z",
-        "sites_with_name": 9620
+        "at": "2026-11-14T10:26:04.528Z",
+        "sites_with_name": 9629
       }
     },
     {
