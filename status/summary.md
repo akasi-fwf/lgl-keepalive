@@ -1,12 +1,12 @@
-Checked 2026-11-14 08:36 UTC
+Checked 2026-11-14 08:50 UTC
 
 | Check | Result | Detail |
 |---|---|---|
 | Website loads | ✅ | `"HTTP 200"` |
-| Backend running current code | ✅ | `{"booted": "2026-11-14T08:36:16.909Z", "changed_since_boot": [], "checked": "2026-11-14T08:36:16.910Z", "last_restart": null, "up_to_date": true}` |
-| Core feeds collected in the last 30 min | ✅ | `{"latest_check_at": "2026-11-14T08:11:34.719Z", "healthy": 152, "feeds": 179}` |
+| Backend running current code | ✅ | `{"booted": "2026-11-14T08:50:22.835Z", "changed_since_boot": [], "checked": "2026-11-14T08:50:22.835Z", "last_restart": null, "up_to_date": true}` |
+| Core feeds collected in the last 30 min | ❌ | `{"latest_check_at": "2026-11-14T08:11:34.719Z", "healthy": 0, "feeds": 179}` |
 | All 8 global feed shards ran in the last 20 min | ❌ | `{"fresh_shards": 0, "of": 8, "expected": 8, "feeds": 15933}` |
-| At least 200 headlines collected in the last hour | ✅ | `{"headlines_1h": 977, "headlines_24h": 55292, "outlets_24h": 5498}` |
+| At least 200 headlines collected in the last hour | ✅ | `{"headlines_1h": 705, "headlines_24h": 54808, "outlets_24h": 5489}` |
 | Global Pulse 100 rebuilt in the last 60 min | ✅ | `{"updated": "2026-11-14 08:35:29.878Z", "events": 298, "reports": 6067}` |
 | Ingest watchdog reports healthy | ✅ | `{"last_restart": null, "state": "young"}` |
 | Feed discovery ran in the last 30 min | ❌ | `{"at": "2026-11-14T08:00:02.181Z", "found": 2984}` |
