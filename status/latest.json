@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-14T16:38:00.195898+00:00",
+  "checked_at": "2026-11-14T16:40:07.494363+00:00",
   "ok": false,
   "results": [
     {
@@ -41,9 +41,9 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 414,
-        "headlines_24h": 36948,
-        "outlets_24h": 3927
+        "headlines_1h": 412,
+        "headlines_24h": 36842,
+        "outlets_24h": 3918
       }
     },
     {
@@ -67,8 +67,8 @@
       "check": "Feed discovery ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-14T16:30:00.441Z",
-        "found": 3358
+        "at": "2026-11-14T16:40:05.395Z",
+        "found": 3369
       }
     },
     {
