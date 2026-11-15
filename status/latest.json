@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-15T18:21:19.271879+00:00",
-  "ok": true,
+  "checked_at": "2026-11-15T18:35:36.654047+00:00",
+  "ok": false,
   "results": [
     {
       "check": "Website loads",
@@ -11,9 +11,9 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-15T18:21:14.656Z",
+        "booted": "2026-11-15T18:35:31.909Z",
         "changed_since_boot": [],
-        "checked": "2026-11-15T18:21:14.656Z",
+        "checked": "2026-11-15T18:35:31.909Z",
         "last_restart": null,
         "up_to_date": true
       }
@@ -29,9 +29,9 @@
     },
     {
       "check": "All 8 global feed shards ran in the last 20 min",
-      "ok": true,
+      "ok": false,
       "detail": {
-        "fresh_shards": 8,
+        "fresh_shards": 0,
         "of": 8,
         "expected": 8,
         "feeds": 15933
@@ -41,18 +41,18 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 2451,
-        "headlines_24h": 57487,
-        "outlets_24h": 6796
+        "headlines_1h": 1666,
+        "headlines_24h": 56807,
+        "outlets_24h": 6751
       }
     },
     {
       "check": "Global Pulse 100 rebuilt in the last 60 min",
       "ok": true,
       "detail": {
-        "updated": "2026-11-15 18:00:33.735Z",
-        "events": 364,
-        "reports": 6072
+        "updated": "2026-11-15 18:30:34.194Z",
+        "events": 355,
+        "reports": 6145
       }
     },
     {
@@ -75,16 +75,16 @@
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-15T18:16:00.024Z",
-        "filled_total": 16627
+        "at": "2026-11-15T18:31:00.026Z",
+        "filled_total": 16669
       }
     },
     {
       "check": "Outlet names job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-15T18:06:09.692Z",
-        "sites_with_name": 10196
+        "at": "2026-11-15T18:26:03.965Z",
+        "sites_with_name": 10220
       }
     },
     {
