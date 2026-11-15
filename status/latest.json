@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-15T00:53:44.343808+00:00",
+  "checked_at": "2026-11-15T01:07:56.881821+00:00",
   "ok": false,
   "results": [
     {
@@ -11,9 +11,9 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-15T00:51:09.547Z",
+        "booted": "2026-11-15T01:07:00.244Z",
         "changed_since_boot": [],
-        "checked": "2026-11-15T00:51:09.547Z",
+        "checked": "2026-11-15T01:07:00.244Z",
         "last_restart": null,
         "up_to_date": true
       }
@@ -22,7 +22,7 @@
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-15T00:46:39.818Z",
+        "latest_check_at": "2026-11-15T01:01:44.991Z",
         "healthy": 151,
         "feeds": 179
       }
@@ -41,9 +41,9 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 382,
-        "headlines_24h": 29961,
-        "outlets_24h": 2471
+        "headlines_1h": 265,
+        "headlines_24h": 29859,
+        "outlets_24h": 2453
       }
     },
     {
@@ -67,24 +67,24 @@
       "check": "Feed discovery ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-15T00:50:00.985Z",
-        "found": 4013
+        "at": "2026-11-15T01:00:03.888Z",
+        "found": 4021
       }
     },
     {
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-15T00:51:00.022Z",
-        "filled_total": 15488
+        "at": "2026-11-15T01:06:33.936Z",
+        "filled_total": 15608
       }
     },
     {
       "check": "Outlet names job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-15T00:46:04.449Z",
-        "sites_with_name": 9806
+        "at": "2026-11-15T01:06:03.486Z",
+        "sites_with_name": 9807
       }
     },
     {
@@ -98,9 +98,9 @@
     },
     {
       "check": "Story Hubs built in the last 45 min",
-      "ok": false,
+      "ok": true,
       "detail": {
-        "ran": "2026-11-14T22:00:00.001Z",
+        "ran": "2026-11-15T01:00:00.002Z",
         "created": 80
       }
     },
