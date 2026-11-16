@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-16T02:23:41.941378+00:00",
+  "checked_at": "2026-11-16T02:37:57.486082+00:00",
   "ok": false,
   "results": [
     {
@@ -11,19 +11,19 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-16T02:23:35.531Z",
+        "booted": "2026-11-16T02:37:57.956Z",
         "changed_since_boot": [],
-        "checked": "2026-11-16T02:23:35.531Z",
+        "checked": "2026-11-16T02:37:57.956Z",
         "last_restart": null,
         "up_to_date": true
       }
     },
     {
       "check": "Core feeds collected in the last 30 min",
-      "ok": false,
+      "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-16T00:11:41.340Z",
-        "healthy": 0,
+        "latest_check_at": "2026-11-16T02:31:39.559Z",
+        "healthy": 152,
         "feeds": 179
       }
     },
@@ -39,11 +39,11 @@
     },
     {
       "check": "At least 200 headlines collected in the last hour",
-      "ok": false,
+      "ok": true,
       "detail": {
-        "headlines_1h": 123,
-        "headlines_24h": 45549,
-        "outlets_24h": 5307
+        "headlines_1h": 271,
+        "headlines_24h": 45535,
+        "outlets_24h": 5285
       }
     },
     {
@@ -75,16 +75,16 @@
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-16T02:21:00.022Z",
-        "filled_total": 17174
+        "at": "2026-11-16T02:36:27.513Z",
+        "filled_total": 17254
       }
     },
     {
       "check": "Outlet names job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-16T02:16:03.611Z",
-        "sites_with_name": 10223
+        "at": "2026-11-16T02:36:03.494Z",
+        "sites_with_name": 10222
       }
     },
     {
@@ -98,9 +98,9 @@
     },
     {
       "check": "Story Hubs built in the last 45 min",
-      "ok": false,
+      "ok": true,
       "detail": {
-        "ran": "2026-11-15T21:30:00.007Z",
+        "ran": "2026-11-16T02:30:00.001Z",
         "created": 80
       }
     },
