@@ -1,17 +1,17 @@
-Checked 2026-11-16 20:35 UTC
+Checked 2026-11-16 20:49 UTC
 
 | Check | Result | Detail |
 |---|---|---|
 | Website loads | ✅ | `"HTTP 200"` |
-| Backend running current code | ✅ | `{"booted": "2026-11-16T20:33:17.786Z", "changed_since_boot": [], "checked": "2026-11-16T20:33:17.786Z", "last_restart": null, "up_to_date": true}` |
+| Backend running current code | ✅ | `{"booted": "2026-11-16T20:49:34.884Z", "changed_since_boot": [], "checked": "2026-11-16T20:49:34.884Z", "last_restart": null, "up_to_date": true}` |
 | Core feeds collected in the last 30 min | ❌ | `{"latest_check_at": "2026-11-16T16:26:46.817Z", "healthy": 0, "feeds": 179}` |
 | All 8 global feed shards ran in the last 20 min | ❌ | `{"fresh_shards": 0, "of": 8, "expected": 8, "feeds": 15933}` |
-| At least 200 headlines collected in the last hour | ✅ | `{"headlines_1h": 337, "headlines_24h": 19752, "outlets_24h": 972}` |
+| At least 200 headlines collected in the last hour | ✅ | `{"headlines_1h": 292, "headlines_24h": 19675, "outlets_24h": 972}` |
 | Global Pulse 100 rebuilt in the last 60 min | ✅ | `{"updated": "2026-11-16 20:30:34.759Z", "events": 251, "reports": 6204}` |
 | Ingest watchdog reports healthy | ✅ | `{"last_restart": null, "state": "young"}` |
 | Feed discovery ran in the last 30 min | ✅ | `{"at": "2026-11-16T20:35:01.097Z", "found": 4153}` |
-| Story Hub pictures job ran in the last 30 min | ✅ | `{"at": "2026-11-16T20:26:01.128Z", "filled_total": 17894}` |
-| Outlet names job ran in the last 30 min | ✅ | `{"at": "2026-11-16T20:26:04.066Z", "sites_with_name": 10232}` |
+| Story Hub pictures job ran in the last 30 min | ✅ | `{"at": "2026-11-16T20:46:20.692Z", "filled_total": 17922}` |
+| Outlet names job ran in the last 30 min | ✅ | `{"at": "2026-11-16T20:46:03.926Z", "sites_with_name": 10232}` |
 | Sitemaps are served | ✅ | `{"site": 200, "places_and_stories": 200, "urls": 6500}` |
 | Story Hubs built in the last 45 min | ❌ | `{"ran": "2026-11-16T02:30:00.001Z", "created": 80}` |
 | Live wire has at least 100 stories | ✅ | `{"items": 300}` |
