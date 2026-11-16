@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-16T22:43:32.521282+00:00",
+  "checked_at": "2026-11-16T22:57:35.438887+00:00",
   "ok": false,
   "results": [
     {
@@ -11,9 +11,9 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-16T22:43:32.863Z",
+        "booted": "2026-11-16T22:57:36.140Z",
         "changed_since_boot": [],
-        "checked": "2026-11-16T22:43:32.864Z",
+        "checked": "2026-11-16T22:57:36.140Z",
         "last_restart": null,
         "up_to_date": true
       }
@@ -41,18 +41,18 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 249,
-        "headlines_24h": 21525,
-        "outlets_24h": 993
+        "headlines_1h": 278,
+        "headlines_24h": 21538,
+        "outlets_24h": 990
       }
     },
     {
       "check": "Global Pulse 100 rebuilt in the last 60 min",
       "ok": true,
       "detail": {
-        "updated": "2026-11-16 22:25:32.773Z",
-        "events": 271,
-        "reports": 6151
+        "updated": "2026-11-16 22:45:34.497Z",
+        "events": 266,
+        "reports": 6155
       }
     },
     {
@@ -65,10 +65,10 @@
     },
     {
       "check": "Feed discovery ran in the last 30 min",
-      "ok": false,
+      "ok": true,
       "detail": {
-        "at": "2026-11-16T21:40:00.459Z",
-        "found": 4159
+        "at": "2026-11-16T22:45:01.902Z",
+        "found": 4166
       }
     },
     {
