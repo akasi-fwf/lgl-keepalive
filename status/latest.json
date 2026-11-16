@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-16T04:03:03.697812+00:00",
+  "checked_at": "2026-11-16T04:17:10.402995+00:00",
   "ok": false,
   "results": [
     {
@@ -11,9 +11,9 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-16T04:02:59.500Z",
+        "booted": "2026-11-16T04:17:03.561Z",
         "changed_since_boot": [],
-        "checked": "2026-11-16T04:02:59.500Z",
+        "checked": "2026-11-16T04:17:03.561Z",
         "last_restart": null,
         "up_to_date": true
       }
@@ -41,18 +41,18 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": false,
       "detail": {
-        "headlines_1h": 192,
-        "headlines_24h": 41899,
-        "outlets_24h": 4819
+        "headlines_1h": 179,
+        "headlines_24h": 41208,
+        "outlets_24h": 4714
       }
     },
     {
       "check": "Global Pulse 100 rebuilt in the last 60 min",
       "ok": true,
       "detail": {
-        "updated": "2026-11-16 03:45:32.280Z",
-        "events": 334,
-        "reports": 6101
+        "updated": "2026-11-16 04:05:31.259Z",
+        "events": 318,
+        "reports": 6073
       }
     },
     {
@@ -75,7 +75,7 @@
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-16T04:01:00.643Z",
+        "at": "2026-11-16T04:06:00.028Z",
         "filled_total": 17298
       }
     },
