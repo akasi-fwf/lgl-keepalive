@@ -1,15 +1,15 @@
-Checked 2026-11-16 16:48 UTC
+Checked 2026-11-16 17:02 UTC
 
 | Check | Result | Detail |
 |---|---|---|
 | Website loads | ✅ | `"HTTP 200"` |
-| Backend running current code | ✅ | `{"booted": "2026-11-16T16:48:18.020Z", "changed_since_boot": [], "checked": "2026-11-16T16:48:18.020Z", "last_restart": null, "up_to_date": true}` |
-| Core feeds collected in the last 30 min | ✅ | `{"latest_check_at": "2026-11-16T16:26:46.817Z", "healthy": 154, "feeds": 179}` |
+| Backend running current code | ✅ | `{"booted": "2026-11-16T17:02:25.515Z", "changed_since_boot": [], "checked": "2026-11-16T17:02:25.515Z", "last_restart": null, "up_to_date": true}` |
+| Core feeds collected in the last 30 min | ❌ | `{"latest_check_at": "2026-11-16T16:26:46.817Z", "healthy": 0, "feeds": 179}` |
 | All 8 global feed shards ran in the last 20 min | ❌ | `{"fresh_shards": 0, "of": 8, "expected": 8, "feeds": 15933}` |
-| At least 200 headlines collected in the last hour | ✅ | `{"headlines_1h": 1083, "headlines_24h": 25455, "outlets_24h": 2480}` |
+| At least 200 headlines collected in the last hour | ✅ | `{"headlines_1h": 670, "headlines_24h": 24062, "outlets_24h": 2230}` |
 | Global Pulse 100 rebuilt in the last 60 min | ✅ | `{"updated": "2026-11-16 16:40:32.778Z", "events": 292, "reports": 6153}` |
 | Ingest watchdog reports healthy | ✅ | `{"last_restart": null, "state": "young"}` |
-| Feed discovery ran in the last 30 min | ✅ | `{"at": "2026-11-16T16:30:00.574Z", "found": 4152}` |
+| Feed discovery ran in the last 30 min | ❌ | `{"at": "2026-11-16T16:30:00.574Z", "found": 4152}` |
 | Story Hub pictures job ran in the last 30 min | ✅ | `{"at": "2026-11-16T16:46:01.126Z", "filled_total": 17708}` |
 | Outlet names job ran in the last 30 min | ✅ | `{"at": "2026-11-16T16:46:03.889Z", "sites_with_name": 10231}` |
 | Sitemaps are served | ✅ | `{"site": 200, "places_and_stories": 200, "urls": 6500}` |
