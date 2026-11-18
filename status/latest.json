@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-18T20:30:25.317473+00:00",
-  "ok": true,
+  "checked_at": "2026-11-18T20:44:29.676669+00:00",
+  "ok": false,
   "results": [
     {
       "check": "Website loads",
@@ -11,9 +11,9 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-18T20:26:09.760Z",
+        "booted": "2026-11-18T20:44:16.940Z",
         "changed_since_boot": [],
-        "checked": "2026-11-18T20:26:09.760Z",
+        "checked": "2026-11-18T20:44:16.940Z",
         "last_restart": null,
         "up_to_date": true
       }
@@ -22,16 +22,16 @@
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-18T20:16:46.882Z",
-        "healthy": 154,
+        "latest_check_at": "2026-11-18T20:31:50.220Z",
+        "healthy": 152,
         "feeds": 179
       }
     },
     {
       "check": "All 8 global feed shards ran in the last 20 min",
-      "ok": true,
+      "ok": false,
       "detail": {
-        "fresh_shards": 8,
+        "fresh_shards": 0,
         "of": 8,
         "expected": 8,
         "feeds": 15933
@@ -41,9 +41,9 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 2949,
-        "headlines_24h": 257830,
-        "outlets_24h": 11740
+        "headlines_1h": 2129,
+        "headlines_24h": 256613,
+        "outlets_24h": 11725
       }
     },
     {
@@ -75,16 +75,16 @@
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-18T20:26:00.030Z",
-        "filled_total": 23168
+        "at": "2026-11-18T20:41:00.426Z",
+        "filled_total": 23244
       }
     },
     {
       "check": "Outlet names job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-18T20:16:04.625Z",
-        "sites_with_name": 10538
+        "at": "2026-11-18T20:36:11.056Z",
+        "sites_with_name": 10544
       }
     },
     {
