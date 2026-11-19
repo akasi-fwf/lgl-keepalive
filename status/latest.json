@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-11-19T21:02:48.342138+00:00",
+  "checked_at": "2026-11-19T21:16:56.359656+00:00",
   "ok": false,
   "results": [
     {
       "check": "Website loads",
-      "ok": true,
-      "detail": "HTTP 200"
+      "ok": false,
+      "detail": "HTTP 202"
     },
     {
       "check": "Backend running current code",
       "ok": false,
-      "detail": "HTTP Error 502: Bad Gateway"
+      "detail": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "check": "Core feeds collected in the last 30 min",
@@ -52,7 +52,7 @@
     {
       "check": "Ingest watchdog reports healthy",
       "ok": false,
-      "detail": "HTTP Error 502: Bad Gateway"
+      "detail": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "check": "Feed discovery ran in the last 30 min",
@@ -82,8 +82,8 @@
       "check": "Sitemaps are served",
       "ok": false,
       "detail": {
-        "site": 200,
-        "places_and_stories": 0,
+        "site": 202,
+        "places_and_stories": 202,
         "urls": 0
       }
     },
