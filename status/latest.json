@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-19T13:57:53.003629+00:00",
+  "checked_at": "2026-11-19T14:11:56.381761+00:00",
   "ok": true,
   "results": [
     {
@@ -11,9 +11,9 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-19T13:55:51.417Z",
+        "booted": "2026-11-19T13:58:04.233Z",
         "changed_since_boot": [],
-        "checked": "2026-11-19T13:55:51.417Z",
+        "checked": "2026-11-19T13:58:04.233Z",
         "last_restart": null,
         "up_to_date": true
       }
@@ -22,8 +22,8 @@
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-19T13:51:33.383Z",
-        "healthy": 155,
+        "latest_check_at": "2026-11-19T14:11:41.614Z",
+        "healthy": 154,
         "feeds": 179
       }
     },
@@ -41,8 +41,8 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 6290,
-        "headlines_24h": 274130,
+        "headlines_1h": 6254,
+        "headlines_24h": 274433,
         "outlets_24h": 12214
       }
     },
@@ -67,24 +67,24 @@
       "check": "Feed discovery ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-19T13:54:59.471Z",
-        "found": 6460
+        "at": "2026-11-19T14:10:00.931Z",
+        "found": 6471
       }
     },
     {
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-19T13:56:00.958Z",
-        "filled_total": 27020
+        "at": "2026-11-19T14:11:00.531Z",
+        "filled_total": 27088
       }
     },
     {
       "check": "Outlet names job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-19T13:56:03.753Z",
-        "sites_with_name": 11000
+        "at": "2026-11-19T14:06:03.869Z",
+        "sites_with_name": 10986
       }
     },
     {
@@ -100,7 +100,7 @@
       "check": "Story Hubs built in the last 45 min",
       "ok": true,
       "detail": {
-        "ran": "2026-11-19T13:45:00.003Z",
+        "ran": "2026-11-19T14:00:00.004Z",
         "created": 80
       }
     },
