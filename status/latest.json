@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-19T12:32:41.297991+00:00",
+  "checked_at": "2026-11-19T12:46:47.321523+00:00",
   "ok": true,
   "results": [
     {
@@ -22,7 +22,7 @@
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-19T12:31:33.178Z",
+        "latest_check_at": "2026-11-19T12:46:35.774Z",
         "healthy": 154,
         "feeds": 179
       }
@@ -41,18 +41,18 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 8399,
-        "headlines_24h": 274938,
-        "outlets_24h": 12180
+        "headlines_1h": 8585,
+        "headlines_24h": 275208,
+        "outlets_24h": 12196
       }
     },
     {
       "check": "Global Pulse 100 rebuilt in the last 60 min",
       "ok": true,
       "detail": {
-        "updated": "2026-11-19 12:20:34.071Z",
-        "events": 302,
-        "reports": 6150
+        "updated": "2026-11-19 12:40:35.207Z",
+        "events": 279,
+        "reports": 6157
       }
     },
     {
@@ -60,31 +60,31 @@
       "ok": true,
       "detail": {
         "last_restart": null,
-        "state": "young"
+        "state": "ok"
       }
     },
     {
       "check": "Feed discovery ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-19T12:29:57.140Z",
-        "found": 6361
+        "at": "2026-11-19T12:45:01.238Z",
+        "found": 6393
       }
     },
     {
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-19T12:31:20.364Z",
-        "filled_total": 26611
+        "at": "2026-11-19T12:46:16.333Z",
+        "filled_total": 26682
       }
     },
     {
       "check": "Outlet names job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-19T12:26:03.785Z",
-        "sites_with_name": 10947
+        "at": "2026-11-19T12:46:09.180Z",
+        "sites_with_name": 10979
       }
     },
     {
