@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-19T23:52:53.743340+00:00",
+  "checked_at": "2026-11-20T00:07:00.222371+00:00",
   "ok": false,
   "results": [
     {
@@ -26,9 +26,9 @@
       "ok": false,
       "detail": {
         "fresh_shards": 0,
-        "of": 0,
+        "of": 8,
         "expected": 8,
-        "feeds": null
+        "feeds": 15933
       }
     },
     {
@@ -36,70 +36,73 @@
       "ok": false,
       "detail": {
         "headlines_1h": 0,
-        "headlines_24h": null,
-        "outlets_24h": null
+        "headlines_24h": 209811,
+        "outlets_24h": 11140
       }
     },
     {
       "check": "Global Pulse 100 rebuilt in the last 60 min",
       "ok": false,
       "detail": {
-        "updated": null,
-        "events": null,
-        "reports": null
+        "updated": "2026-11-19 17:10:37.649Z",
+        "events": 302,
+        "reports": 6181
       }
     },
     {
       "check": "Ingest watchdog reports healthy",
-      "ok": false,
-      "detail": "HTTP Error 502: Bad Gateway"
+      "ok": true,
+      "detail": {
+        "last_restart": null,
+        "state": "young"
+      }
     },
     {
       "check": "Feed discovery ran in the last 30 min",
       "ok": false,
       "detail": {
-        "at": null,
-        "found": null
+        "at": "2026-11-19T17:24:47.643Z",
+        "found": 6683
       }
     },
     {
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": false,
       "detail": {
-        "at": null,
-        "filled_total": null
+        "at": "2026-11-19T17:41:00.807Z",
+        "filled_total": 27895
       }
     },
     {
       "check": "Outlet names job ran in the last 30 min",
       "ok": false,
       "detail": {
-        "at": null,
-        "sites_with_name": null
+        "at": "2026-11-19T17:26:07.585Z",
+        "sites_with_name": 11033
       }
     },
     {
       "check": "Sitemaps are served",
-      "ok": false,
+      "ok": true,
       "detail": {
         "site": 200,
-        "places_and_stories": 0,
-        "urls": 0
+        "places_and_stories": 200,
+        "urls": 6506
       }
     },
     {
       "check": "Story Hubs built in the last 45 min",
       "ok": false,
       "detail": {
-        "ran": null,
-        "created": null
+        "ran": "2026-11-19T17:00:00.001Z",
+        "created": 68
       }
     },
     {
       "check": "Live wire has at least 100 stories",
-      "ok": false,
+      "ok": true,
       "detail": {
-        "items": 0
+        "items": 300
       }
     }
   ]
