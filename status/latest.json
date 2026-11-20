@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-20T04:21:41.847454+00:00",
+  "checked_at": "2026-11-20T04:35:53.281761+00:00",
   "ok": false,
   "results": [
     {
@@ -22,8 +22,8 @@
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-20T04:21:39.711Z",
-        "healthy": 152,
+        "latest_check_at": "2026-11-20T04:31:33.013Z",
+        "healthy": 153,
         "feeds": 179
       }
     },
@@ -41,18 +41,18 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 2785,
-        "headlines_24h": 257310,
-        "outlets_24h": 12290
+        "headlines_1h": 2924,
+        "headlines_24h": 257053,
+        "outlets_24h": 12291
       }
     },
     {
       "check": "Global Pulse 100 rebuilt in the last 60 min",
       "ok": true,
       "detail": {
-        "updated": "2026-11-20 04:15:32.622Z",
-        "events": 300,
-        "reports": 6150
+        "updated": "2026-11-20 04:35:35.447Z",
+        "events": 321,
+        "reports": 6167
       }
     },
     {
@@ -60,22 +60,22 @@
       "ok": true,
       "detail": {
         "last_restart": null,
-        "state": "young"
+        "state": "ok"
       }
     },
     {
       "check": "Feed discovery ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-20T04:20:00.246Z",
-        "found": 6885
+        "at": "2026-11-20T04:34:40.640Z",
+        "found": 6894
       }
     },
     {
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-20T04:21:00.802Z",
+        "at": "2026-11-20T04:31:01.463Z",
         "filled_total": 27895
       }
     },
@@ -83,8 +83,8 @@
       "check": "Outlet names job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-20T04:16:04.116Z",
-        "sites_with_name": 11090
+        "at": "2026-11-20T04:26:04.260Z",
+        "sites_with_name": 11100
       }
     },
     {
