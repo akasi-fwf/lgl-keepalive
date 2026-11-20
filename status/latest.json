@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-20T07:54:11.383477+00:00",
+  "checked_at": "2026-11-20T08:08:17.844937+00:00",
   "ok": false,
   "results": [
     {
@@ -11,9 +11,9 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-20T07:13:17.475Z",
+        "booted": "2026-11-20T08:00:08.503Z",
         "changed_since_boot": [],
-        "checked": "2026-11-20T07:13:17.476Z",
+        "checked": "2026-11-20T08:00:08.503Z",
         "last_restart": null,
         "up_to_date": true
       }
@@ -22,7 +22,7 @@
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-20T07:51:40.402Z",
+        "latest_check_at": "2026-11-20T08:06:46.817Z",
         "healthy": 153,
         "feeds": 179
       }
@@ -41,9 +41,9 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 5271,
-        "headlines_24h": 250445,
-        "outlets_24h": 12269
+        "headlines_1h": 5380,
+        "headlines_24h": 250197,
+        "outlets_24h": 12271
       }
     },
     {
@@ -60,22 +60,22 @@
       "ok": true,
       "detail": {
         "last_restart": null,
-        "state": "ok"
+        "state": "young"
       }
     },
     {
       "check": "Feed discovery ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-20T07:50:00.438Z",
-        "found": 7059
+        "at": "2026-11-20T08:04:42.265Z",
+        "found": 7085
       }
     },
     {
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-20T07:51:00.658Z",
+        "at": "2026-11-20T08:06:01.086Z",
         "filled_total": 27895
       }
     },
@@ -83,8 +83,8 @@
       "check": "Outlet names job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-20T07:46:04.367Z",
-        "sites_with_name": 11128
+        "at": "2026-11-20T08:06:04.185Z",
+        "sites_with_name": 11130
       }
     },
     {
