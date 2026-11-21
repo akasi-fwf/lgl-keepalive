@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-21T15:15:51.183957+00:00",
+  "checked_at": "2026-11-21T15:30:04.579755+00:00",
   "ok": true,
   "results": [
     {
@@ -22,7 +22,7 @@
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-21T15:11:41.390Z",
+        "latest_check_at": "2026-11-21T15:26:47.461Z",
         "healthy": 156,
         "feeds": 179
       }
@@ -41,9 +41,9 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 3867,
-        "headlines_24h": 218653,
-        "outlets_24h": 11397
+        "headlines_1h": 3738,
+        "headlines_24h": 217320,
+        "outlets_24h": 11336
       }
     },
     {
@@ -60,30 +60,30 @@
       "ok": true,
       "detail": {
         "last_restart": null,
-        "state": "young"
+        "state": "ok"
       }
     },
     {
       "check": "Feed discovery ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-21T15:15:00.416Z",
-        "found": 9795
+        "at": "2026-11-21T15:30:02.251Z",
+        "found": 9802
       }
     },
     {
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-21T15:11:50.172Z",
-        "filled_total": 34478
+        "at": "2026-11-21T15:26:42.910Z",
+        "filled_total": 34562
       }
     },
     {
       "check": "Outlet names job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-21T15:06:05.045Z",
+        "at": "2026-11-21T15:26:09.881Z",
         "sites_with_name": 12131
       }
     },
@@ -100,7 +100,7 @@
       "check": "Story Hubs built in the last 45 min",
       "ok": true,
       "detail": {
-        "ran": "2026-11-21T15:07:00.001Z",
+        "ran": "2026-11-21T15:22:00.000Z",
         "created": 80
       }
     },
