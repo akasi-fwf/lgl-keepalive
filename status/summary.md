@@ -1,4 +1,4 @@
-Checked 2026-11-21 23:30 UTC
+Checked 2026-11-21 23:31 UTC
 
 | Check | Result | Detail |
 |---|---|---|
@@ -10,7 +10,7 @@ Checked 2026-11-21 23:30 UTC
 | Global Pulse 100 rebuilt in the last 60 min | ✅ | `{"updated": "2026-11-21 23:15:35.501Z", "events": 380, "reports": 6120}` |
 | Ingest watchdog reports healthy | ✅ | `{"last_restart": null, "state": "young"}` |
 | Feed discovery ran in the last 30 min | ✅ | `{"at": "2026-11-21T23:30:00.382Z", "found": 9859}` |
-| Story Hub pictures job ran in the last 30 min | ✅ | `{"at": "2026-11-21T23:26:36.089Z", "filled_total": 36291}` |
+| Story Hub pictures job ran in the last 30 min | ✅ | `{"at": "2026-11-21T23:31:00.440Z", "filled_total": 36291}` |
 | Outlet names job ran in the last 30 min | ✅ | `{"at": "2026-11-21T23:26:06.580Z", "sites_with_name": 12163}` |
 | Sitemaps are served | ✅ | `{"site": 200, "places_and_stories": 200, "urls": 6506}` |
 | Story Hubs built in the last 45 min | ✅ | `{"ran": "2026-11-21T23:22:00.001Z", "created": 66}` |
