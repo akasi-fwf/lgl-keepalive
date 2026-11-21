@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-21T18:28:00.209029+00:00",
+  "checked_at": "2026-11-21T18:33:44.886273+00:00",
   "ok": true,
   "results": [
     {
@@ -22,8 +22,8 @@
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-21T18:26:35.005Z",
-        "healthy": 156,
+        "latest_check_at": "2026-11-21T18:31:39.003Z",
+        "healthy": 154,
         "feeds": 179
       }
     },
@@ -41,9 +41,9 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 3184,
-        "headlines_24h": 207145,
-        "outlets_24h": 10781
+        "headlines_1h": 3158,
+        "headlines_24h": 206862,
+        "outlets_24h": 10751
       }
     },
     {
@@ -67,16 +67,16 @@
       "check": "Feed discovery ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-21T18:25:01.683Z",
-        "found": 9819
+        "at": "2026-11-21T18:29:55.714Z",
+        "found": 9820
       }
     },
     {
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-21T18:26:50.647Z",
-        "filled_total": 35235
+        "at": "2026-11-21T18:31:13.678Z",
+        "filled_total": 35261
       }
     },
     {
