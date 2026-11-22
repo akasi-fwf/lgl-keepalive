@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-22T17:39:29.651368+00:00",
+  "checked_at": "2026-11-22T17:53:45.218692+00:00",
   "ok": true,
   "results": [
     {
@@ -11,9 +11,9 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-22T17:33:12.517Z",
+        "booted": "2026-11-22T17:50:02.436Z",
         "changed_since_boot": [],
-        "checked": "2026-11-22T17:33:12.517Z",
+        "checked": "2026-11-22T17:50:02.436Z",
         "last_restart": null,
         "up_to_date": true
       }
@@ -22,8 +22,8 @@
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-22T17:36:34.132Z",
-        "healthy": 155,
+        "latest_check_at": "2026-11-22T17:46:36.338Z",
+        "healthy": 154,
         "feeds": 179
       }
     },
@@ -41,18 +41,18 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 3395,
-        "headlines_24h": 177391,
-        "outlets_24h": 9467
+        "headlines_1h": 3888,
+        "headlines_24h": 178207,
+        "outlets_24h": 9470
       }
     },
     {
       "check": "Global Pulse 100 rebuilt in the last 60 min",
       "ok": true,
       "detail": {
-        "updated": "2026-11-22 17:15:37.583Z",
+        "updated": "2026-11-22 17:40:35.272Z",
         "events": 323,
-        "reports": 6140
+        "reports": 6115
       }
     },
     {
@@ -67,7 +67,7 @@
       "check": "Feed discovery ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-22T17:34:30.290Z",
+        "at": "2026-11-22T17:45:00.237Z",
         "found": 9940
       }
     },
@@ -75,16 +75,16 @@
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-22T17:36:01.184Z",
-        "filled_total": 40415
+        "at": "2026-11-22T17:51:01.506Z",
+        "filled_total": 40472
       }
     },
     {
       "check": "Outlet names job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-22T17:36:05.330Z",
-        "sites_with_name": 12216
+        "at": "2026-11-22T17:46:06.523Z",
+        "sites_with_name": 12217
       }
     },
     {
