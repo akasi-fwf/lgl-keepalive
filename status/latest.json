@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-22T11:46:11.904133+00:00",
+  "checked_at": "2026-11-22T11:50:16.882699+00:00",
   "ok": true,
   "results": [
     {
@@ -22,8 +22,8 @@
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-22T11:41:37.627Z",
-        "healthy": 156,
+        "latest_check_at": "2026-11-22T11:46:33.372Z",
+        "healthy": 157,
         "feeds": 179
       }
     },
@@ -41,8 +41,8 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 3806,
-        "headlines_24h": 180271,
+        "headlines_1h": 3863,
+        "headlines_24h": 180341,
         "outlets_24h": 9604
       }
     },
@@ -67,8 +67,8 @@
       "check": "Feed discovery ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-22T11:45:01.367Z",
-        "found": 9909
+        "at": "2026-11-22T11:50:00.289Z",
+        "found": 9911
       }
     },
     {
