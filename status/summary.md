@@ -1,17 +1,17 @@
-Checked 2026-11-23 04:06 UTC
+Checked 2026-11-23 04:20 UTC
 
 | Check | Result | Detail |
 |---|---|---|
-| Website loads | ❌ | `"HTTP 202"` |
-| Backend running current code | ❌ | `"Expecting value: line 1 column 1 (char 0)"` |
-| Core feeds collected in the last 30 min | ❌ | `{"latest_check_at": null, "healthy": null, "feeds": null}` |
-| All 8 global feed shards ran in the last 20 min | ❌ | `{"fresh_shards": 0, "of": 0, "expected": 8, "feeds": null}` |
-| At least 200 headlines collected in the last hour | ❌ | `{"headlines_1h": 0, "headlines_24h": null, "outlets_24h": null}` |
-| Global Pulse 100 rebuilt in the last 60 min | ❌ | `{"updated": null, "events": null, "reports": null}` |
-| Ingest watchdog reports healthy | ❌ | `"Expecting value: line 1 column 1 (char 0)"` |
-| Feed discovery ran in the last 30 min | ❌ | `{"at": null, "found": null}` |
-| Story Hub pictures job ran in the last 30 min | ❌ | `{"at": null, "filled_total": null}` |
-| Outlet names job ran in the last 30 min | ❌ | `{"at": null, "sites_with_name": null}` |
-| Sitemaps are served | ❌ | `{"site": 202, "places_and_stories": 202, "urls": 0}` |
-| Story Hubs built in the last 45 min | ❌ | `{"ran": null, "created": null}` |
-| Live wire has at least 100 stories | ❌ | `{"items": 0}` |
+| Website loads | ✅ | `"HTTP 200"` |
+| Backend running current code | ✅ | `{"booted": "2026-11-23T04:03:50.645Z", "changed_since_boot": [], "checked": "2026-11-23T04:03:50.645Z", "last_restart": null, "up_to_date": true}` |
+| Core feeds collected in the last 30 min | ✅ | `{"latest_check_at": "2026-11-23T04:16:37.104Z", "healthy": 156, "feeds": 179}` |
+| All 8 global feed shards ran in the last 20 min | ✅ | `{"fresh_shards": 8, "of": 8, "expected": 8, "feeds": 15933}` |
+| At least 200 headlines collected in the last hour | ✅ | `{"headlines_1h": 2299, "headlines_24h": 183815, "outlets_24h": 9716}` |
+| Global Pulse 100 rebuilt in the last 60 min | ✅ | `{"updated": "2026-11-23 04:10:34.619Z", "events": 356, "reports": 6120}` |
+| Ingest watchdog reports healthy | ✅ | `{"last_restart": null, "state": "young"}` |
+| Feed discovery ran in the last 30 min | ✅ | `{"at": "2026-11-23T04:20:01.360Z", "found": 9985}` |
+| Story Hub pictures job ran in the last 30 min | ✅ | `{"at": "2026-11-23T04:16:01.118Z", "filled_total": 42149}` |
+| Outlet names job ran in the last 30 min | ✅ | `{"at": "2026-11-23T04:16:05.576Z", "sites_with_name": 12233}` |
+| Sitemaps are served | ✅ | `{"site": 200, "places_and_stories": 200, "urls": 6506}` |
+| Story Hubs built in the last 45 min | ✅ | `{"ran": "2026-11-23T04:07:00.002Z", "created": 26}` |
+| Live wire has at least 100 stories | ✅ | `{"items": 300}` |
