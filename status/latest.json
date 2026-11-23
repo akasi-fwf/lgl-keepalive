@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-23T18:00:58.802612+00:00",
+  "checked_at": "2026-11-23T18:15:03.703722+00:00",
   "ok": true,
   "results": [
     {
@@ -22,8 +22,8 @@
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-23T17:57:03.396Z",
-        "healthy": 155,
+        "latest_check_at": "2026-11-23T18:12:14.225Z",
+        "healthy": 156,
         "feeds": 179
       }
     },
@@ -41,18 +41,18 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 4613,
-        "headlines_24h": 248245,
-        "outlets_24h": 12467
+        "headlines_1h": 4387,
+        "headlines_24h": 249634,
+        "outlets_24h": 12515
       }
     },
     {
       "check": "Global Pulse 100 rebuilt in the last 60 min",
       "ok": true,
       "detail": {
-        "updated": "2026-11-23 17:50:35.300Z",
-        "events": 316,
-        "reports": 6187
+        "updated": "2026-11-23 18:10:35.929Z",
+        "events": 306,
+        "reports": 6160
       }
     },
     {
@@ -67,24 +67,24 @@
       "check": "Feed discovery ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-23T18:00:00.741Z",
-        "found": 10049
+        "at": "2026-11-23T18:15:02.561Z",
+        "found": 10053
       }
     },
     {
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-23T18:01:00.614Z",
-        "filled_total": 44710
+        "at": "2026-11-23T18:11:08.185Z",
+        "filled_total": 44730
       }
     },
     {
       "check": "Outlet names job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-23T17:56:07.769Z",
-        "sites_with_name": 12307
+        "at": "2026-11-23T18:06:06.705Z",
+        "sites_with_name": 12306
       }
     },
     {
@@ -100,8 +100,8 @@
       "check": "Story Hubs built in the last 45 min",
       "ok": true,
       "detail": {
-        "ran": "2026-11-23T17:52:00.000Z",
-        "created": 16
+        "ran": "2026-11-23T18:07:00.001Z",
+        "created": 24
       }
     },
     {
