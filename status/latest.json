@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-23T05:16:00.320373+00:00",
+  "checked_at": "2026-11-23T05:17:10.324257+00:00",
   "ok": true,
   "results": [
     {
@@ -22,8 +22,8 @@
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-23T05:06:41.228Z",
-        "healthy": 153,
+        "latest_check_at": "2026-11-23T05:16:35.603Z",
+        "healthy": 154,
         "feeds": 179
       }
     },
@@ -41,9 +41,9 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 2434,
-        "headlines_24h": 183980,
-        "outlets_24h": 9737
+        "headlines_1h": 2478,
+        "headlines_24h": 184062,
+        "outlets_24h": 9738
       }
     },
     {
