@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-24T13:19:07.845385+00:00",
+  "checked_at": "2026-11-24T13:21:29.893774+00:00",
   "ok": true,
   "results": [
     {
@@ -11,9 +11,9 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-24T13:07:06.119Z",
+        "booted": "2026-11-24T13:21:24.954Z",
         "changed_since_boot": [],
-        "checked": "2026-11-24T13:07:06.119Z",
+        "checked": "2026-11-24T13:21:24.954Z",
         "last_restart": null,
         "up_to_date": true
       }
@@ -41,8 +41,8 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 5248,
-        "headlines_24h": 272935,
+        "headlines_1h": 5165,
+        "headlines_24h": 272768,
         "outlets_24h": 13147
       }
     },
@@ -67,15 +67,15 @@
       "check": "Feed discovery ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-24T13:14:41.022Z",
-        "found": 10128
+        "at": "2026-11-24T13:19:44.491Z",
+        "found": 10129
       }
     },
     {
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-24T13:16:01.856Z",
+        "at": "2026-11-24T13:21:01.420Z",
         "filled_total": 46761
       }
     },
