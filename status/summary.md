@@ -1,17 +1,17 @@
-Checked 2026-11-24 07:55 UTC
+Checked 2026-11-24 08:10 UTC
 
 | Check | Result | Detail |
 |---|---|---|
 | Website loads | ✅ | `"HTTP 200"` |
-| Backend running current code | ✅ | `{"booted": "2026-11-24T07:43:41.566Z", "changed_since_boot": [], "checked": "2026-11-24T07:43:41.566Z", "last_restart": null, "up_to_date": true}` |
-| Core feeds collected in the last 30 min | ✅ | `{"latest_check_at": "2026-11-24T07:51:40.460Z", "healthy": 159, "feeds": 179}` |
+| Backend running current code | ✅ | `{"booted": "2026-11-24T07:57:45.771Z", "changed_since_boot": [], "checked": "2026-11-24T07:57:45.771Z", "last_restart": null, "up_to_date": true}` |
+| Core feeds collected in the last 30 min | ✅ | `{"latest_check_at": "2026-11-24T08:06:31.076Z", "healthy": 159, "feeds": 179}` |
 | All 8 global feed shards ran in the last 20 min | ✅ | `{"fresh_shards": 8, "of": 8, "expected": 8, "feeds": 15933}` |
-| At least 200 headlines collected in the last hour | ✅ | `{"headlines_1h": 4684, "headlines_24h": 277952, "outlets_24h": 13190}` |
-| Global Pulse 100 rebuilt in the last 60 min | ✅ | `{"updated": "2026-11-24 07:40:39.426Z", "events": 309, "reports": 6173}` |
+| At least 200 headlines collected in the last hour | ✅ | `{"headlines_1h": 3993, "headlines_24h": 276485, "outlets_24h": 13170}` |
+| Global Pulse 100 rebuilt in the last 60 min | ✅ | `{"updated": "2026-11-24 08:00:37.666Z", "events": 314, "reports": 6146}` |
 | Ingest watchdog reports healthy | ✅ | `{"last_restart": null, "state": "young"}` |
-| Feed discovery ran in the last 30 min | ✅ | `{"at": "2026-11-24T07:54:57.091Z", "found": 10109}` |
-| Story Hub pictures job ran in the last 30 min | ✅ | `{"at": "2026-11-24T07:51:00.606Z", "filled_total": 46086}` |
-| Outlet names job ran in the last 30 min | ✅ | `{"at": "2026-11-24T07:46:08.501Z", "sites_with_name": 12335}` |
+| Feed discovery ran in the last 30 min | ✅ | `{"at": "2026-11-24T08:09:44.997Z", "found": 10109}` |
+| Story Hub pictures job ran in the last 30 min | ✅ | `{"at": "2026-11-24T08:06:01.451Z", "filled_total": 46140}` |
+| Outlet names job ran in the last 30 min | ✅ | `{"at": "2026-11-24T08:06:15.815Z", "sites_with_name": 12327}` |
 | Sitemaps are served | ✅ | `{"site": 200, "places_and_stories": 200, "urls": 6506}` |
-| Story Hubs built in the last 45 min | ✅ | `{"ran": "2026-11-24T07:52:00.002Z", "created": 55}` |
+| Story Hubs built in the last 45 min | ✅ | `{"ran": "2026-11-24T08:07:00.000Z", "created": 37}` |
 | Live wire has at least 100 stories | ✅ | `{"items": 300}` |
