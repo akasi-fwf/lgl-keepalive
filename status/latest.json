@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-25T05:23:56.878137+00:00",
+  "checked_at": "2026-11-25T05:24:57.354080+00:00",
   "ok": true,
   "results": [
     {
@@ -41,9 +41,9 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 3015,
-        "headlines_24h": 289092,
-        "outlets_24h": 13373
+        "headlines_1h": 3082,
+        "headlines_24h": 289118,
+        "outlets_24h": 13375
       }
     },
     {
@@ -67,8 +67,8 @@
       "check": "Feed discovery ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-25T05:20:00.302Z",
-        "found": 10210
+        "at": "2026-11-25T05:25:03.033Z",
+        "found": 10211
       }
     },
     {
@@ -100,8 +100,8 @@
       "check": "Story Hubs built in the last 45 min",
       "ok": true,
       "detail": {
-        "ran": "2026-11-25T04:52:00.001Z",
-        "created": 58
+        "ran": "2026-11-25T05:22:00.001Z",
+        "created": 55
       }
     },
     {
