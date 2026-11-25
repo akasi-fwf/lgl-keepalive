@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-25T01:09:28.206937+00:00",
+  "checked_at": "2026-11-25T01:23:34.445373+00:00",
   "ok": true,
   "results": [
     {
@@ -22,7 +22,7 @@
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-25T01:06:37.529Z",
+        "latest_check_at": "2026-11-25T01:21:44.474Z",
         "healthy": 159,
         "feeds": 179
       }
@@ -41,18 +41,18 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 1980,
-        "headlines_24h": 289631,
-        "outlets_24h": 13357
+        "headlines_1h": 2070,
+        "headlines_24h": 289882,
+        "outlets_24h": 13366
       }
     },
     {
       "check": "Global Pulse 100 rebuilt in the last 60 min",
       "ok": true,
       "detail": {
-        "updated": "2026-11-25 00:55:34.618Z",
-        "events": 316,
-        "reports": 6171
+        "updated": "2026-11-25 01:15:33.663Z",
+        "events": 312,
+        "reports": 6180
       }
     },
     {
@@ -67,23 +67,23 @@
       "check": "Feed discovery ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-25T01:04:52.349Z",
-        "found": 10195
+        "at": "2026-11-25T01:19:49.671Z",
+        "found": 10199
       }
     },
     {
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-25T01:06:01.426Z",
-        "filled_total": 48651
+        "at": "2026-11-25T01:21:05.442Z",
+        "filled_total": 48675
       }
     },
     {
       "check": "Outlet names job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-25T01:06:07.764Z",
+        "at": "2026-11-25T01:16:07.948Z",
         "sites_with_name": 12358
       }
     },
