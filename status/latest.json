@@ -1,114 +1,105 @@
 {
-  "checked_at": "2026-11-26T06:18:07.503927+00:00",
-  "ok": true,
+  "checked_at": "2026-11-26T06:32:13.319922+00:00",
+  "ok": false,
   "results": [
     {
       "check": "Website loads",
-      "ok": true,
-      "detail": "HTTP 200"
+      "ok": false,
+      "detail": "HTTP 202"
     },
     {
       "check": "Backend running current code",
-      "ok": true,
-      "detail": {
-        "booted": "2026-11-26T05:46:51.778Z",
-        "changed_since_boot": [],
-        "checked": "2026-11-26T05:46:51.778Z",
-        "last_restart": null,
-        "up_to_date": true
-      }
+      "ok": false,
+      "detail": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "check": "Core feeds collected in the last 30 min",
-      "ok": true,
+      "ok": false,
       "detail": {
-        "latest_check_at": "2026-11-26T06:16:35.839Z",
-        "healthy": 158,
-        "feeds": 179
+        "latest_check_at": null,
+        "healthy": null,
+        "feeds": null
       }
     },
     {
       "check": "All 8 global feed shards ran in the last 20 min",
-      "ok": true,
+      "ok": false,
       "detail": {
-        "fresh_shards": 8,
-        "of": 8,
+        "fresh_shards": 0,
+        "of": 0,
         "expected": 8,
-        "feeds": 15933
+        "feeds": null
       }
     },
     {
       "check": "At least 200 headlines collected in the last hour",
-      "ok": true,
+      "ok": false,
       "detail": {
-        "headlines_1h": 4056,
-        "headlines_24h": 294769,
-        "outlets_24h": 13257
+        "headlines_1h": 0,
+        "headlines_24h": null,
+        "outlets_24h": null
       }
     },
     {
       "check": "Global Pulse 100 rebuilt in the last 60 min",
-      "ok": true,
+      "ok": false,
       "detail": {
-        "updated": "2026-11-26 06:00:33.614Z",
-        "events": 303,
-        "reports": 6100
+        "updated": null,
+        "events": null,
+        "reports": null
       }
     },
     {
       "check": "Ingest watchdog reports healthy",
-      "ok": true,
-      "detail": {
-        "last_restart": null,
-        "state": "ok"
-      }
+      "ok": false,
+      "detail": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "check": "Feed discovery ran in the last 30 min",
-      "ok": true,
+      "ok": false,
       "detail": {
-        "at": "2026-11-26T06:15:00.254Z",
-        "found": 10283
+        "at": null,
+        "found": null
       }
     },
     {
       "check": "Story Hub pictures job ran in the last 30 min",
-      "ok": true,
+      "ok": false,
       "detail": {
-        "at": "2026-11-26T06:16:01.434Z",
-        "filled_total": 53741
+        "at": null,
+        "filled_total": null
       }
     },
     {
       "check": "Outlet names job ran in the last 30 min",
-      "ok": true,
+      "ok": false,
       "detail": {
-        "at": "2026-11-26T06:16:10.587Z",
-        "sites_with_name": 12385
+        "at": null,
+        "sites_with_name": null
       }
     },
     {
       "check": "Sitemaps are served",
-      "ok": true,
+      "ok": false,
       "detail": {
-        "site": 200,
-        "places_and_stories": 200,
-        "urls": 6506
+        "site": 202,
+        "places_and_stories": 202,
+        "urls": 0
       }
     },
     {
       "check": "Story Hubs built in the last 45 min",
-      "ok": true,
+      "ok": false,
       "detail": {
-        "ran": "2026-11-26T06:07:00.001Z",
-        "created": 66
+        "ran": null,
+        "created": null
       }
     },
     {
       "check": "Live wire has at least 100 stories",
-      "ok": true,
+      "ok": false,
       "detail": {
-        "items": 300
+        "items": 0
       }
     }
   ]
