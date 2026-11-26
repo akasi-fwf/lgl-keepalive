@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26T18:19:25.196151+00:00",
+  "checked_at": "2026-11-26T18:33:34.203717+00:00",
   "ok": true,
   "results": [
     {
@@ -11,9 +11,9 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-26T17:51:04.208Z",
+        "booted": "2026-11-26T18:32:00.305Z",
         "changed_since_boot": [],
-        "checked": "2026-11-26T17:51:04.208Z",
+        "checked": "2026-11-26T18:32:00.305Z",
         "last_restart": null,
         "up_to_date": true
       }
@@ -22,8 +22,8 @@
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-26T18:16:43.963Z",
-        "healthy": 156,
+        "latest_check_at": "2026-11-26T18:31:45.092Z",
+        "healthy": 157,
         "feeds": 179
       }
     },
@@ -41,9 +41,9 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 4978,
-        "headlines_24h": 282438,
-        "outlets_24h": 12735
+        "headlines_1h": 4104,
+        "headlines_24h": 281538,
+        "outlets_24h": 12696
       }
     },
     {
@@ -60,31 +60,31 @@
       "ok": true,
       "detail": {
         "last_restart": null,
-        "state": "ok"
+        "state": "young"
       }
     },
     {
       "check": "Feed discovery ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-26T18:15:01.933Z",
-        "found": 10308
+        "at": "2026-11-26T18:30:03.246Z",
+        "found": 10309
       }
     },
     {
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-26T18:16:01.211Z",
-        "filled_total": 56407
+        "at": "2026-11-26T18:31:00.822Z",
+        "filled_total": 56410
       }
     },
     {
       "check": "Outlet names job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-26T18:16:07.170Z",
-        "sites_with_name": 12378
+        "at": "2026-11-26T18:26:07.585Z",
+        "sites_with_name": 12383
       }
     },
     {
