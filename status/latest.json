@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26T19:58:26.338081+00:00",
+  "checked_at": "2026-11-26T20:12:34.705013+00:00",
   "ok": true,
   "results": [
     {
@@ -22,8 +22,8 @@
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-26T19:56:37.519Z",
-        "healthy": 158,
+        "latest_check_at": "2026-11-26T20:11:39.283Z",
+        "healthy": 157,
         "feeds": 179
       }
     },
@@ -41,18 +41,18 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 4113,
-        "headlines_24h": 281357,
-        "outlets_24h": 12589
+        "headlines_1h": 3860,
+        "headlines_24h": 280959,
+        "outlets_24h": 12546
       }
     },
     {
       "check": "Global Pulse 100 rebuilt in the last 60 min",
       "ok": true,
       "detail": {
-        "updated": "2026-11-26 19:40:34.229Z",
-        "events": 280,
-        "reports": 6180
+        "updated": "2026-11-26 20:00:43.620Z",
+        "events": 299,
+        "reports": 6096
       }
     },
     {
@@ -60,14 +60,14 @@
       "ok": true,
       "detail": {
         "last_restart": null,
-        "state": "young"
+        "state": "ok"
       }
     },
     {
       "check": "Feed discovery ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-26T19:55:00.796Z",
+        "at": "2026-11-26T20:10:04.020Z",
         "found": 10311
       }
     },
@@ -75,16 +75,16 @@
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-26T19:56:30.560Z",
-        "filled_total": 56679
+        "at": "2026-11-26T20:11:31.792Z",
+        "filled_total": 56726
       }
     },
     {
       "check": "Outlet names job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-26T19:56:07.806Z",
-        "sites_with_name": 12381
+        "at": "2026-11-26T20:06:09.533Z",
+        "sites_with_name": 12374
       }
     },
     {
@@ -100,8 +100,8 @@
       "check": "Story Hubs built in the last 45 min",
       "ok": true,
       "detail": {
-        "ran": "2026-11-26T19:52:00.002Z",
-        "created": 49
+        "ran": "2026-11-26T20:07:00.001Z",
+        "created": 51
       }
     },
     {
