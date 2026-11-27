@@ -1,19 +1,19 @@
 {
-  "checked_at": "2026-11-27T12:58:00.267600+00:00",
+  "checked_at": "2026-11-27T13:12:03.811896+00:00",
   "ok": false,
   "results": [
     {
       "check": "Website loads",
-      "ok": false,
-      "detail": "HTTP 202"
+      "ok": true,
+      "detail": "HTTP 200"
     },
     {
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-27T12:57:00.302Z",
+        "booted": "2026-11-27T13:09:56.989Z",
         "changed_since_boot": [],
-        "checked": "2026-11-27T12:57:00.302Z",
+        "checked": "2026-11-27T13:09:56.989Z",
         "last_restart": null,
         "up_to_date": true
       }
@@ -22,8 +22,8 @@
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-27T12:52:03.148Z",
-        "healthy": 157,
+        "latest_check_at": "2026-11-27T13:11:54.623Z",
+        "healthy": 156,
         "feeds": 179
       }
     },
@@ -41,9 +41,9 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 1015,
-        "headlines_24h": 221878,
-        "outlets_24h": 11463
+        "headlines_1h": 1174,
+        "headlines_24h": 217952,
+        "outlets_24h": 11384
       }
     },
     {
@@ -65,7 +65,7 @@
     },
     {
       "check": "Feed discovery ran in the last 30 min",
-      "ok": true,
+      "ok": false,
       "detail": {
         "at": "2026-11-27T12:35:40.612Z",
         "found": 10341
@@ -75,7 +75,7 @@
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-27T12:56:14.524Z",
+        "at": "2026-11-27T13:11:00.870Z",
         "filled_total": 58921
       }
     },
@@ -83,15 +83,15 @@
       "check": "Outlet names job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-27T12:56:09.162Z",
-        "sites_with_name": 12317
+        "at": "2026-11-27T13:06:08.077Z",
+        "sites_with_name": 12316
       }
     },
     {
       "check": "Sitemaps are served",
-      "ok": false,
+      "ok": true,
       "detail": {
-        "site": 202,
+        "site": 200,
         "places_and_stories": 200,
         "urls": 6506
       }
