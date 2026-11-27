@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T10:50:35.763899+00:00",
+  "checked_at": "2026-11-27T11:04:44.592172+00:00",
   "ok": true,
   "results": [
     {
@@ -22,8 +22,8 @@
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-27T10:50:00.496Z",
-        "healthy": 158,
+        "latest_check_at": "2026-11-27T10:58:54.934Z",
+        "healthy": 156,
         "feeds": 179
       }
     },
@@ -41,9 +41,9 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 1533,
-        "headlines_24h": 253398,
-        "outlets_24h": 11858
+        "headlines_1h": 996,
+        "headlines_24h": 248888,
+        "outlets_24h": 11794
       }
     },
     {
@@ -60,31 +60,31 @@
       "ok": true,
       "detail": {
         "last_restart": null,
-        "state": "young"
+        "state": "ok"
       }
     },
     {
       "check": "Feed discovery ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-27T10:50:42.242Z",
-        "found": 10339
+        "at": "2026-11-27T11:00:37.814Z",
+        "found": 10340
       }
     },
     {
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-27T10:46:05.135Z",
-        "filled_total": 58887
+        "at": "2026-11-27T11:01:10.486Z",
+        "filled_total": 58888
       }
     },
     {
       "check": "Outlet names job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-27T10:46:51.721Z",
-        "sites_with_name": 12342
+        "at": "2026-11-27T10:56:54.951Z",
+        "sites_with_name": 12344
       }
     },
     {
@@ -100,8 +100,8 @@
       "check": "Story Hubs built in the last 45 min",
       "ok": true,
       "detail": {
-        "ran": "2026-11-27T10:37:00.001Z",
-        "created": 3
+        "ran": "2026-11-27T10:52:00.002Z",
+        "created": 1
       }
     },
     {
