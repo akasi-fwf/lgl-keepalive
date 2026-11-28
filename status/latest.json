@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-28T06:25:52.696374+00:00",
+  "checked_at": "2026-11-28T06:39:58.560473+00:00",
   "ok": true,
   "results": [
     {
@@ -11,9 +11,9 @@
       "check": "Backend running current code",
       "ok": true,
       "detail": {
-        "booted": "2026-11-28T06:23:19.515Z",
+        "booted": "2026-11-28T06:31:06.779Z",
         "changed_since_boot": [],
-        "checked": "2026-11-28T06:23:19.515Z",
+        "checked": "2026-11-28T06:31:06.779Z",
         "last_restart": null,
         "up_to_date": true
       }
@@ -22,8 +22,8 @@
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-28T06:21:31.538Z",
-        "healthy": 157,
+        "latest_check_at": "2026-11-28T06:36:42.123Z",
+        "healthy": 156,
         "feeds": 179
       }
     },
@@ -41,18 +41,18 @@
       "check": "At least 200 headlines collected in the last hour",
       "ok": true,
       "detail": {
-        "headlines_1h": 1682,
-        "headlines_24h": 164386,
-        "outlets_24h": 12015
+        "headlines_1h": 2441,
+        "headlines_24h": 164216,
+        "outlets_24h": 12006
       }
     },
     {
       "check": "Global Pulse 100 rebuilt in the last 60 min",
       "ok": true,
       "detail": {
-        "updated": "2026-11-28 06:10:31.267Z",
-        "events": 242,
-        "reports": 6096
+        "updated": "2026-11-28 06:35:31.307Z",
+        "events": 280,
+        "reports": 6077
       }
     },
     {
@@ -67,24 +67,24 @@
       "check": "Feed discovery ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-28T06:24:57.133Z",
-        "found": 10350
+        "at": "2026-11-28T06:39:49.689Z",
+        "found": 10352
       }
     },
     {
       "check": "Story Hub pictures job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-28T06:21:00.801Z",
-        "filled_total": 59720
+        "at": "2026-11-28T06:36:01.718Z",
+        "filled_total": 59733
       }
     },
     {
       "check": "Outlet names job ran in the last 30 min",
       "ok": true,
       "detail": {
-        "at": "2026-11-28T06:16:08.748Z",
-        "sites_with_name": 12297
+        "at": "2026-11-28T06:36:10.614Z",
+        "sites_with_name": 12302
       }
     },
     {
@@ -100,8 +100,8 @@
       "check": "Story Hubs built in the last 45 min",
       "ok": true,
       "detail": {
-        "ran": "2026-11-28T05:52:00.000Z",
-        "created": 55
+        "ran": "2026-11-28T06:37:00.002Z",
+        "created": 27
       }
     },
     {
