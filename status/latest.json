@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-28T01:56:03.374117+00:00",
+  "checked_at": "2026-11-28T01:56:54.878426+00:00",
   "ok": true,
   "results": [
     {
@@ -22,8 +22,8 @@
       "check": "Core feeds collected in the last 30 min",
       "ok": true,
       "detail": {
-        "latest_check_at": "2026-11-28T01:51:34.083Z",
-        "healthy": 157,
+        "latest_check_at": "2026-11-28T01:56:33.845Z",
+        "healthy": 156,
         "feeds": 179
       }
     },

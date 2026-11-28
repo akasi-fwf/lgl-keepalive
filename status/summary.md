@@ -4,7 +4,7 @@ Checked 2026-11-28 01:56 UTC
 |---|---|---|
 | Website loads | ✅ | `"HTTP 200"` |
 | Backend running current code | ✅ | `{"booted": "2026-11-28T01:54:22.853Z", "changed_since_boot": [], "checked": "2026-11-28T01:54:22.853Z", "last_restart": null, "up_to_date": true}` |
-| Core feeds collected in the last 30 min | ✅ | `{"latest_check_at": "2026-11-28T01:51:34.083Z", "healthy": 157, "feeds": 179}` |
+| Core feeds collected in the last 30 min | ✅ | `{"latest_check_at": "2026-11-28T01:56:33.845Z", "healthy": 156, "feeds": 179}` |
 | All 8 global feed shards ran in the last 20 min | ✅ | `{"fresh_shards": 8, "of": 8, "expected": 8, "feeds": 15933}` |
 | At least 200 headlines collected in the last hour | ✅ | `{"headlines_1h": 1147, "headlines_24h": 174982, "outlets_24h": 12131}` |
 | Global Pulse 100 rebuilt in the last 60 min | ✅ | `{"updated": "2026-11-28 01:50:34.579Z", "events": 298, "reports": 6096}` |
